@@ -128,13 +128,17 @@ nav a:focus {
 }
 
 .content_wrapper{
-  padding:70px 15px 0;
+  padding:70px 15px 30px;
 }
 
 img{
   max-width: 100%;
 }
 @media (min-width: 780px) {
+    .half{
+      width: 50%;
+      float: left;
+    }
     .menu-toggle {
         display: none;
     }
