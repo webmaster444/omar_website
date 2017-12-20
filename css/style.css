@@ -134,6 +134,24 @@ nav a:focus {
 img{
   max-width: 100%;
 }
+
+h2.section_title{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+
+p{
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
 @media (min-width: 780px) {
     .half{
       width: 50%;
