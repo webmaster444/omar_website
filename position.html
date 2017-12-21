@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html >
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Welcome to TestClubIo</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,700" rel="stylesheet">
+      <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <nav class="site-nav">
+            <div class="container">
+               <h1 class="logo">TestClubIO</span></h1>
+               <div class="menu-toggle">
+                  <div class="hamburger"></div>
+               </div>
+               <ul class="open desktop">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="behaviour.html">Behaviour</a></li>
+                  <li><a href="position.html">Position</a></li>
+                  <li><a href="automation.html">Automation</a></li>
+                  <li><a href="benefits.html">Benefits</a></li>
+                  <li><a href="bespoke.html">Bespoke</a></li>
+               </ul>
+            </div>
+         </nav>
+         <div class="content_wrapper">
+          <div class="container">            
+            <section id="position_section">
+               <h2 class="section_title">POSITION</h2>
+               <p>The testing world is pretty big, so here’s where we sit:</p>
+               <p>Know that this is?</p>
+               <img src="imgs/position1.jpeg" alt="Position 1" class="half"/>
+               <img src="imgs/position2.jpeg" alt="Position 2" class="half"/>
+               <p>Its a brake release spring off a bike. Its small but important because it releases your brake when you release the lever. You could say its a unit because we can’t break it down any more. Its not dependent on any other parts and its easily tested in isolation.</p>
+               <p>Unit tests verify individual components of a complex system. A unit can be tested independently of the other parts of the system. These tests are cool because they let us know whether each of the the small parts of a system work in isolation. The tests can be run quick and efficiently by computers.</p>
+               <p>Unit test Pass -> We know the small parts work in isolation 
+                  Unit test Fail -> We know which small parts have failed. We can fix them and run again.
+               </p>
+               <p>This is a brake from that bike. The spring above is part of this brake, but the brake has a lot of other small parts too. A brake is a component of a bike. </p>
+               <img src="imgs/position3.jpeg" alt="Position 3" class="half" />
+               <img src="imgs/position4.jpeg" alt="Position 4" class="half" />
+               <p>Any given system has lots of components. There’ll likely be components within components, and there will certainly be joining up of components (integration). Components need testing and so do the interfaces between them.</p>
+               <p>Component test pass -> This component works, but what about its interfaces between components?
+                  Component test fail -> Which part of component failed? Lets go back and check the unit tests
+               </p>
+               <p>Here is a system. In our case its a bike.</p>
+               <img src="imgs/position5.jpeg" alt="Position 5"/>
+               <img src="imgs/position6.jpeg" alt="Position 6"/>
+               <p>What will a user of this system care about when they want to use it? It’s likely they'll care about what it does rather than the parts its made from.</p>
+               <p>The behaviours of the bike are therefore a good way to test this. Everybody knows what I bike should do - you don’t need to one a bike mechanic.
+                  This is where behavioural testing comes in.
+               </p>
+               <p>Such tests are comes not from independence but from interdependence of parts working together. </p>
+               <p>Behavioural test pass -> This behaviour is as we want it
+                  Behavioural test fail ->  
+               </p>
+               <p>Proportion: Most Unit tests, less Component tests, less Behavioural tests</p>
+               <img src="imgs/position7.jpeg" alt="Position 7"/>
+               <p>Here’s why behavioural testing is important. </p>
+               <p>Requirements get verified by Acceptance tests
+                  System specifications get verified by Component tests
+                  Technical specifications get verified by Unit tests
+                  See the top line - Business Case gets verified only by Realisation
+               </p>
+               <p>This diagram outlines the relative cost in finding something wrong. Late is expensive! 
+                  Its best to iron out kinks as early as possible.
+               </p>
+               <img src="imgs/position8.jpeg" alt="Position 8"/>
+            </section>
+          </div>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/jquery.pagenav.js"></script>
+      </script>
+   </body>
+</html>

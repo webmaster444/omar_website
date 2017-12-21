@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html >
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Welcome to TestClubIo</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,700" rel="stylesheet">
+      <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <nav class="site-nav">
+            <div class="container">
+               <h1 class="logo">TestClubIO</span></h1>
+               <div class="menu-toggle">
+                  <div class="hamburger"></div>
+               </div>
+               <ul class="open desktop">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="behaviour.html">Behaviour</a></li>
+                  <li><a href="position.html">Position</a></li>
+                  <li><a href="automation.html">Automation</a></li>
+                  <li><a href="benefits.html">Benefits</a></li>
+                  <li><a href="bespoke.html">Bespoke</a></li>
+               </ul>
+            </div>
+         </nav>
+         <div class="content_wrapper">
+          <div class="container">
+            <section id="automation_section">
+               <h2 class="section_title">AUTOMATION</h2>
+               <p>We’re technology pragmatic, which means we like to go with whatever is the best tool for the job.</p>
+               <p>Scenario: See picture
+                  Given i am on the Testclub website
+                  And i am on the Automation page
+                  When i opt to see the picture
+                  Then i see the picture
+               </p>
+               <p>Scenario: Toggle lines off
+                  Given i am on the automation page
+                  And i can see the picture
+                  When i toggle lines off
+                  Then i dont see any lines
+               </p>
+               <p>Scenario: Toggle lines on
+                  Given i am on the automation page
+                  And i can see the picture
+                  And lines are off
+                  When i toggle lines on
+                  Then i see the lines
+               </p>
+               <p>
+                  Scenario outline: Toggle rectangles
+                  Given i am on the Testclub website
+                  And i am on the automation page
+                  And i see the picture
+                  And i put the 
+                  <link_colour>
+                  on
+                  And i see the 
+                  <rect_colour>
+                  rectangles
+                  When i put the 
+                  <link colour>
+                  link off
+                  Then i dont see the 
+                  <rect_colour>
+                  rectangles
+               </p>
+               <p>Examples:
+                  | link_colour | rect_colour |
+                  | black          | black          |
+                  | red              | red             |
+                  | blue            | blue            |
+                  | yellow         | yellow         |
+               </p>
+               <p>
+                  Scenario outline: Rotate picture
+                  Given i am on the Testclub website
+                  And i am on the automation page
+                  And i see the picture
+                  When i click the 
+                  <rotation_direction>
+                  link
+                  Then the picture rotates 90 degrees to the 
+                  <rotation_direction>
+               </p>
+               <p>| rotation_direction |
+                  | left                        |
+                  | left                        |
+                  | right                      |
+                  | right                      |
+                  | right                      |
+               </p>
+               <img src="imgs/automation.png" alt="Automation" />
+            </section>
+          </div>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/jquery.pagenav.js"></script>
+      </script>
+   </body>
+</html>
