@@ -6,5 +6,5 @@ $('.menu-toggle').click(function() {
 })
 
 $(document).ready(function(){
-	$('nav a').pageNav({'scroll_shift': $('nav').outerHeight() + 20});
+	// $('nav a').pageNav({'scroll_shift': $('nav').outerHeight() + 20});
 })

@@ -9,6 +9,7 @@
       <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,700" rel="stylesheet">
       <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/reportstyle.css">      
    </head>
    <body>
       <div class="wrapper">
@@ -33,7 +34,24 @@
             <section id="bespoke_section">
                <h2 class="section_title">BESPOKE</h2>
                <p>We like visualising data. Its the best way to get the point across.  We have our templates but tailor reports and dashboards specifically to you.Our aim is to produce reporting an communication to you that outlines areas of risk. </p>
-               <img src="imgs/bespoke.png" alt="Bespoke" />
+                <div id="flow_execution_chart">
+                  <h3> Execution Status </h3>
+                </div>
+                <div id="scenarios_by_funcion_chart">
+                  <h3> Tests by Area </h3>
+                </div>
+                <div id="behavioural_test_coverage">
+                  <h3> Behavioural Coverage </h3>     
+                </div>
+                <div id="heatmap_functional_area">
+                    <h3> Functional Coverage Heatmap </h3>
+                </div>
+                <div id="horizontal_bar_chart">
+                    <h3> API Test Status</h3>
+                </div>
+                <div id="table_data">
+
+                </div>     
                <p>Specification workshops</p>
                <p>Impact mapping</p>
                <p>Meaningful project-risk based reporting rather than a load of testing numbers</p>
@@ -46,6 +64,14 @@
       <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
       <script src="js/script.js"></script>
       <script src="js/jquery.pagenav.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="js/lib/d3.v3.min.js" charset="utf-8"></script>
+      <script src="js/lib/d3.tooltip.js" charset="utf-8"></script>    
+      <script src="js/report/donutchart.js" charset="utf-8"></script>
+      <script src="js/report/barchart.js" charset="utf-8"></script>
+      <script src="js/report/heatmap.js" charset="utf-8"></script>
+      <script src="js/report/horizontalbarchart.js" charset="utf-8"></script>
+      <script src="js/report/custom.js" charset="utf-8"></script>
       </script>
    </body>
 </html>
