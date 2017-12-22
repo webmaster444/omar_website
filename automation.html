@@ -8,7 +8,9 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
       <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,700" rel="stylesheet">
       <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">    
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/automate_style.css">
    </head>
    <body>
       <div class="wrapper">
@@ -95,7 +97,63 @@
                   | right                      |
                   | right                      |
                </p>
-               <img src="imgs/automation.png" alt="Automation" />
+               
+               <div class="content">
+                 <div id="button_wrapper">
+                     <div data-toggle="buttons">
+                         <label class="btn btn-primary active">
+                             <input type="checkbox" autocomplete="off" id="picBtn"> Picture
+                         </label>
+                     </div>
+
+                     <div data-toggle="buttons">
+                         <label class="btn btn-primary">
+                             <input type="checkbox" autocomplete="off" id="linesBtn"> Lines
+                         </label>
+                     </div>
+
+                     <div data-toggle="buttons">
+                         <label class="btn btn-primary">
+                             <input type="checkbox" autocomplete="off" id="redBtn"> Red
+                         </label>
+                     </div>
+                     <div data-toggle="buttons">
+                         <label class="btn btn-primary">
+                             <input type="checkbox" autocomplete="off" id="blackBtn"> Black
+                         </label>
+                     </div>
+                     <div data-toggle="buttons">
+                         <label class="btn btn-primary">
+                             <input type="checkbox" autocomplete="off" id="blueBtn"> Blue
+                         </label>
+                     </div>
+
+                     <div data-toggle="buttons">
+                         <label class="btn btn-primary">
+                             <input type="checkbox" autocomplete="off" id="yellowBtn"> Yellow
+                         </label>
+                     </div>
+
+                     <div>
+                         <button type="button" class="btn btn-primary" id="rotateLeft" aria-pressed="false" autocomplete="off">
+                             Rotate Left
+                         </button>
+
+                         <button type="button" class="btn btn-primary" id="rotateRight" aria-pressed="false" autocomplete="off">
+                             Rotate Right
+                         </button>
+                     </div>
+                 </div>
+
+                 <div id="imgs_wrapper">
+                     <img src="imgs/lines-01.png" id="line_img" />
+                     <img src="imgs/blue-01.png" id="blue_img" />
+                     <img src="imgs/black-01.png" id="black_img" />
+                     <img src="imgs/red-01.png" id="red_img" />
+                     <img src="imgs/yellow-01.png" id="yellow_img" />
+                     <div class="clearfix"></div>
+                 </div>
+             </div>
             </section>
           </div>
          </div>
@@ -103,6 +161,9 @@
       <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
       <script src="js/script.js"></script>
       <script src="js/jquery.pagenav.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+      <script src="js/lib/jqueryrotate.js"></script>
+      <script src="js/automation/custom.js"></script>
       </script>
    </body>
 </html>
