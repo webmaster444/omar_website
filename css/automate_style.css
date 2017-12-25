@@ -33,7 +33,7 @@ text{
 	padding:10px;
 	box-sizing: border-box;
 	position: relative;
-	margin-top: 100px;
+	margin: 100px 0;
 }
 
 #button_wrapper a:hover {
@@ -78,6 +78,7 @@ text{
 
 #rotateLeft, #rotateRight{
 	width: 100%;
+	margin:5px 0;
 }
 .clearfix{
 	clear: both;
@@ -98,7 +99,7 @@ text{
     position: relative;
     padding-left: 35px;
     text-align: left;
-    margin-bottom: 12px;
+    margin:5px 0;
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
