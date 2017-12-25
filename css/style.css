@@ -131,6 +131,10 @@ nav a:hover,
 nav a:focus {
     background: #E4B363;
 }
+
+li.current a{
+    color:#2dbe60;
+}
 .site-nav--icon {
     font-size: 1.4em;
     margin-right: 1em;

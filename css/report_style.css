@@ -1,7 +1,6 @@
 body {
     font-size: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    max-width: 1500px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;    
     margin: 0 auto;
 }
 
@@ -63,8 +62,7 @@ h3{
   padding:10px;
 }
 #table_data{
-  width: 100%;
-  clear: both;
+  width: 100%;  
 }
 
 #horizontal_bar_chart{
