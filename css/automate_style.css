@@ -32,8 +32,7 @@ text{
 	float: left;
 	padding:10px;
 	box-sizing: border-box;
-	position: relative;
-	margin: 100px 0;
+	position: relative;	
 }
 
 #button_wrapper a:hover {
@@ -79,6 +78,7 @@ text{
 #rotateLeft, #rotateRight{
 	width: 100%;
 	margin:5px 0;
+	padding:10px;
 }
 .clearfix{
 	clear: both;
@@ -160,4 +160,10 @@ text{
     transform: rotate(45deg);
     position: absolute;
     display: none;
+}
+
+@media (max-width: 767px) {
+#imgs_wrapper{	
+	width: 100%;
+}
 }
