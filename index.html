@@ -18,8 +18,7 @@
                <div class="menu-toggle">
                   <div class="hamburger"></div>
                </div>
-               <ul class="open desktop">
-                  <li><a href="index.html">Home</a></li>
+               <ul class="open desktop">                  
                   <li><a href="behaviour.html">Behaviour</a></li>
                   <li><a href="position.html">Position</a></li>
                   <li><a href="automation.html">Automation</a></li>
@@ -30,150 +29,70 @@
          </nav>
          <div class="content_wrapper">
           <div class="container">
-            <section id="behavior_section">
-               <h2 class="section_title">BEHAVIOUR</h2>
-               <p>Helping teams define and measure application behaviour is our thing, but the behaviour of people on a project is also worth thinking about:</p>
-               <p>Project stakeholders and roles have various perspectives [and ask different questions] of the software we build. 
-                  The most infamous being the gap between business and tech heads
-               </p>
-               <img src="imgs/bh1.jpeg" alt="Behavior 1" class="half"/>
-               <img src="imgs/bh2.jpeg" alt="Behavior 2" class="half"/>
-               <p>All considerations are potentially valid. We think it shouldn’t only be the job of one 'stakeholder’ to devise requirements. This task can be split out between all parties who have a stake/interest.</p>
-               <p>So we deliberately promote conversations about application behaviours and desired business impacts.</p>
-               <p> The process of specifying behaviours via examples: </p>
-               <p>- Focuses attention - no more vague requirement lists </p>
-               <p>- Begets more examples and sparks ideas </p>
-               <p>- Gets team members speaking the same language - bridging communication gaps </p>
-               <p> A simple process which leads to higher performing, happier teams</p>
-               <img src="imgs/bh3.jpeg" alt="Behavior 3" />
+            <section>
+               <h2 class="section_title"> Results driven software verification</h2>
+               <p>We provide test architecture and oversight. We are great simpifiers. We can manage your testing. We work in context as part of your team. We help remove project noise. We give you the real picture. We write behavioural automated tests. We are flexible. We refine requirements. We are your assurance. We are leaner than the others. We are collaborative. We are technically versatile. We can be your testing core. We know its about business not code. We can help you build profitable software</p>
             </section>
-            <section id="position_section">
-               <h2 class="section_title">POSITION</h2>
-               <p>The testing world is pretty big, so here’s where we sit:</p>
-               <p>Know that this is?</p>
-               <img src="imgs/position1.jpeg" alt="Position 1" class="half"/>
-               <img src="imgs/position2.jpeg" alt="Position 2" class="half"/>
-               <p>Its a brake release spring off a bike. Its small but important because it releases your brake when you release the lever. You could say its a unit because we can’t break it down any more. Its not dependent on any other parts and its easily tested in isolation.</p>
-               <p>Unit tests verify individual components of a complex system. A unit can be tested independently of the other parts of the system. These tests are cool because they let us know whether each of the the small parts of a system work in isolation. The tests can be run quick and efficiently by computers.</p>
-               <p>Unit test Pass -> We know the small parts work in isolation 
-                  Unit test Fail -> We know which small parts have failed. We can fix them and run again.
-               </p>
-               <p>This is a brake from that bike. The spring above is part of this brake, but the brake has a lot of other small parts too. A brake is a component of a bike. </p>
-               <img src="imgs/position3.jpeg" alt="Position 3" class="half" />
-               <img src="imgs/position4.jpeg" alt="Position 4" class="half" />
-               <p>Any given system has lots of components. There’ll likely be components within components, and there will certainly be joining up of components (integration). Components need testing and so do the interfaces between them.</p>
-               <p>Component test pass -> This component works, but what about its interfaces between components?
-                  Component test fail -> Which part of component failed? Lets go back and check the unit tests
-               </p>
-               <p>Here is a system. In our case its a bike.</p>
-               <img src="imgs/position5.jpeg" alt="Position 5"/>
-               <img src="imgs/position6.jpeg" alt="Position 6"/>
-               <p>What will a user of this system care about when they want to use it? It’s likely they'll care about what it does rather than the parts its made from.</p>
-               <p>The behaviours of the bike are therefore a good way to test this. Everybody knows what I bike should do - you don’t need to one a bike mechanic.
-                  This is where behavioural testing comes in.
-               </p>
-               <p>Such tests are comes not from independence but from interdependence of parts working together. </p>
-               <p>Behavioural test pass -> This behaviour is as we want it
-                  Behavioural test fail ->  
-               </p>
-               <p>Proportion: Most Unit tests, less Component tests, less Behavioural tests</p>
-               <img src="imgs/position7.jpeg" alt="Position 7"/>
-               <p>Here’s why behavioural testing is important. </p>
-               <p>Requirements get verified by Acceptance tests
-                  System specifications get verified by Component tests
-                  Technical specifications get verified by Unit tests
-                  See the top line - Business Case gets verified only by Realisation
-               </p>
-               <p>This diagram outlines the relative cost in finding something wrong. Late is expensive! 
-                  Its best to iron out kinks as early as possible.
-               </p>
-               <img src="imgs/position8.jpeg" alt="Position 8"/>
+            <section>
+               <h2 class="section_title"> Scope 1</h2>
+               <p>The role of a story: ..from this they can agree a common definiton of “done”, and we escape the dual gumption traps of “that’s not what I asked for” or “I forgot to tell you about this other thing”</p>
             </section>
-            <section id="automation_section">
-               <h2 class="section_title">AUTOMATION</h2>
-               <p>We’re technology pragmatic, which means we like to go with whatever is the best tool for the job.</p>
-               <p>Scenario: See picture
-                  Given i am on the Testclub website
-                  And i am on the Automation page
-                  When i opt to see the picture
-                  Then i see the picture
-               </p>
-               <p>Scenario: Toggle lines off
-                  Given i am on the automation page
-                  And i can see the picture
-                  When i toggle lines off
-                  Then i dont see any lines
-               </p>
-               <p>Scenario: Toggle lines on
-                  Given i am on the automation page
-                  And i can see the picture
-                  And lines are off
-                  When i toggle lines on
-                  Then i see the lines
-               </p>
-               <p>
-                  Scenario outline: Toggle rectangles
-                  Given i am on the Testclub website
-                  And i am on the automation page
-                  And i see the picture
-                  And i put the 
-                  <link_colour>
-                  on
-                  And i see the 
-                  <rect_colour>
-                  rectangles
-                  When i put the 
-                  <link colour>
-                  link off
-                  Then i dont see the 
-                  <rect_colour>
-                  rectangles
-               </p>
-               <p>Examples:
-                  | link_colour | rect_colour |
-                  | black          | black          |
-                  | red              | red             |
-                  | blue            | blue            |
-                  | yellow         | yellow         |
-               </p>
-               <p>
-                  Scenario outline: Rotate picture
-                  Given i am on the Testclub website
-                  And i am on the automation page
-                  And i see the picture
-                  When i click the 
-                  <rotation_direction>
-                  link
-                  Then the picture rotates 90 degrees to the 
-                  <rotation_direction>
-               </p>
-               <p>| rotation_direction |
-                  | left                        |
-                  | left                        |
-                  | right                      |
-                  | right                      |
-                  | right                      |
-               </p>
-               <img src="imgs/automation.png" alt="Automation" />
+            <section>
+               <h2 class="section_title"> Scope 2</h2>
+               <p>You know your business, but what's the particular business problem you want to solve with this application? What are the essential goals?</p>
+               
+               <p>Only once we define scope from goals can we start defining requirements with confidence. If scoping is not done right, the rest may be a waste of time. </p>
+            </section>            
+            <section>
+               <h2 class="section_title"> Scope 3</h2>
+               <p>Successful teams seek knowledge about the true nature of the problem and then collaborate to design solutions.</p>
+               <p>We can help facilitate project members coming to a shared understanding of what the target is, even if it moves. </p>
             </section>
-            <section id="benefits_section">
-               <h2 class="section_title">BENEFITS</h2>
-               <p>Why use Testclub over anybody else? Lets us count the ways:</p>
-               <p>Flexibility              </p>
+
+            <section>
+               <h2 class="section_title">Requirements</h2>
+               <p>The hardest single part of building a software system is deciding what to build*</p>
+
+<p>Who in your project is verifying that you are actually building the right thing? The product your users actually want.</p>
+
+<p>At their most basic, requirements are the basis of any specification. All systems are defined loosely by their requirements, whether or not they are documented. </p>
             </section>
-            <section id="bespoke_section">
-               <h2 class="section_title">BESPOKE</h2>
-               <p>We like visualising data. Its the best way to get the point across.  We have our templates but tailor reports and dashboards specifically to you.Our aim is to produce reporting an communication to you that outlines areas of risk. </p>
-               <img src="imgs/bespoke.png" alt="Bespoke" />
-               <p>Specification workshops</p>
-               <p>Impact mapping</p>
-               <p>Meaningful project-risk based reporting rather than a load of testing numbers</p>
-               <p>Our assurance processes break down traditional boundaries around testing, requirements and specification processes in a way that significantly improves communication on a project.</p>
-               <p>Opportunity cost - while I’m doing that testing or writing that automation, what am I not doing??</p>
+            <section>
+               <h2 class="section_title">Behavioural 1</h2>
+               <p>Everything is vague to a degree you do not realise till you have tried to make it precise*</p>
+
+<p>This is where loose definitions get tight. We define your expected behaviours by specifying them as examples. As scenarios. </p>
+            </section>
+
+            <section>
+               <h2 class="section_title">Behavioural 2</h2>
+               <p>This involves explicitly specifying all the behaviours of your system exactly. As many as it takes.</p>
+
+<p>We encourage deliberate use of common terms for specific entities and actions within the application (and the domain).</p>
+
+<p>What falls out of this process as a natural by-product is a 'ubiquitous language', tech and stakeholders deriving common understanding of what application-related terms mean. This creates a virtuous cycle of improving communication and clarity.</p>
             </section>
           </div>
          </div>
       </div>
+      <footer>
+         <div class="container">
+         <div class="widget_wrapper half pull-left">
+            <h3 class="widget_title">TestClubIO</h3>
+            <p>Platf9rm</p>
+            <p>Floor 5, 4 North Road, Brighton </p>
+            <p>England</p>
+            <p>BN11YR</p>
+         </div>
+         <div class="widget_wrapper half pull-right">
+            <h3 class="widget_title">Say hello</h3>
+            <a href="mailto:hi@testclub.io">hi@testclub.io</a><br/>
+            <a href="tel:07557026029">07557 026029</a>
+         </div>
+         
+         <div class="clearfix"></div>
+         </div>
+      </footer>
       <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
       <script src="js/script.js"></script>
       <script src="js/jquery.pagenav.js"></script>

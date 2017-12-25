@@ -22,6 +22,16 @@ header {
     position: relative;
 }
 
+footer{
+    background: black;
+    padding:50px 0;
+    color: white;
+}
+
+footer a{
+    color: white;
+    text-decoration: underline;
+}
 .logo {
     color: black;
     font-size: 1rem;
@@ -154,6 +164,9 @@ font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 20px;
 }
+.half{
+    width:100%;
+}
 @media (min-width: 780px) {
     .half{
       width: 50%;
@@ -207,4 +220,15 @@ nav a.logo{
 
 nav a.logo:hover, nav a.logo:focus{
     background: white;
+}
+
+.clearfix{
+    clear:both;
+    float: none;
+}
+
+@media (max-width: 767px) {
+    .widget_wrapper{
+        text-align: center;
+    }
 }
