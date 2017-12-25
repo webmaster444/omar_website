@@ -231,8 +231,15 @@ nav a.logo:hover, nav a.logo:focus{
     float: none;
 }
 
+h3.widget_title{
+    text-align: left;
+}
 @media (max-width: 767px) {
     .widget_wrapper{
+        text-align: center;
+    }
+
+    h3.widget_title{
         text-align: center;
     }
 }
