@@ -218,8 +218,19 @@ font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 
 nav a.logo{
   display: block;
-  max-width: 200px;
-  padding:0;
+  max-width: 250px;
+  padding:10px;  
+}
+
+nav a.logo img{
+    max-width: 45px;    
+}
+
+span.logo_txt{
+    font-size: 30px;
+    font-weight: 800;
+    padding-left: 10px;
+    vertical-align: bottom;
 }
 
 nav a.logo:hover, nav a.logo:focus{
