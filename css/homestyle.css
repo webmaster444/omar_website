@@ -1,0 +1,742 @@
+.fp-controlArrow.fp-next {
+	background-image: url(right.png);
+	background-size: 30px 70px;
+	width: 30px;
+	height: 70px;
+	padding: 0px;
+	border: none;
+	right: 25px;
+}
+.burgerIco {
+	margin-top: 21px;
+}
+.fp-controlArrow.fp-prev {
+	background-image: url(left.png);
+	background-size: 30px 70px;
+	width: 30px;
+	height: 70px;
+	padding: 0px;
+	border: none;
+	right: 25px;
+}
+.intro{
+	width: 60% !important;
+	margin: 0 auto !important;
+	padding-top: 10vh !important;
+	padding-bottom: 15vh !important;
+}
+.page-title{
+	font-size: 2vw !important;
+	font-family: "NHaasGroteskDSStd-75Bd", Helvetica, Arial, sans-serif;
+	margin-bottom: 1vw !important;
+}
+.page-detail{
+	font-size: 1.5vw !important;
+	line-height: 2vw !important;
+	font-family: "NHaasGroteskDSStd-75Bd", Helvetica, Arial, sans-serif
+}
+.hover-none{
+	opacity: 1 !important;
+}
+a {
+	text-decoration:none;
+	color:#000;
+}
+.cOrange{
+	color: orange;
+}
+.cOrange:hover{
+	color: orange;
+}
+.white {
+	color:#FFF;
+}
+.black {
+	color:#000;
+}
+#main {
+	padding-bottom:0px;
+	position:relative;
+	font-family: "NHaasGroteskDSStd-75Bd", Helvetica, Arial, sans-serif !important;
+}
+#main p {
+	position:relative;
+	height:0px;
+}
+.hidit {
+	overflow:hidden;
+	height:0px;
+}
+#main p.notset {
+	opacity:0;
+}
+span.paragraph {
+	min-height: 1px;
+	min-width: 1px;
+	display: inline-block;
+	height: 20px;
+	width: 100%;
+}
+.icon-Burger{
+	font-size: 25px !important;
+}
+.standard {
+	position:relative;
+}
+.standard, .trigger {
+	-webkit-transition:top 1s,left 1s, color 1s;
+	-moz-transition:top 1s,left 1s, color 1s;
+	-o-transition:top 1s,left 1s, color 1s;
+	transition:top 1s,left 1s, color 1s;
+	-webkit-backface-visibility:hidden;
+	z-index:100000;
+}
+
+.standard {
+	color:black;
+}
+.trigger {
+	color: #4688F1;
+	position:relative;
+	text-decoration:none;
+	border:none;
+}
+.trigger:hover{
+	color: orange;
+}
+#main_content{
+	width: 75%;
+	margin: 0 auto;
+	font-size: 1.5vw !important;
+	line-height: 2vw !important;
+}
+.aestrisk{
+
+}
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	right: 0;
+	top: 0;
+	background-color: #e1e1e1;
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+.aestrisk{
+	color: orange;
+	font-size: 1vw !important;
+}
+.overlay-content {
+	position: relative;
+	top: 19%;
+	width: 100%;
+	line-height: 27px;
+}
+.overlay-content li{
+	font-family:Calibre-Bold, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	margin-left: 60px;
+}
+.closebtn:hover, .closebtn:focus {
+	color: #4688F1;
+}
+
+.overlay .closebtn {
+	position: absolute;
+	left: 0px;
+	font-size: 40px;
+	padding-left: 20px;
+	padding-top: 13px;
+}
+
+#myNav{
+	width: 0px;
+	height: 97px !important;
+	border-left: solid 1px #dcd3d3;
+	border-top: solid 1px #dcd3d3;
+	margin: 0;
+	bottom: 0;
+	padding: 0;
+	margin-top: 80vh;
+	border-bottom: solid 1px #dcd3d3;
+}
+
+.openNav{
+	width: 300px !important;
+}
+.overlay a{
+	line-height: 0px !important;
+	font-size: 20px;
+	font-weight: bold;
+}
+li.active a{
+	color: orange !important;
+}
+
+@media screen and (max-height: 450px) {
+	.overlay a {
+		font-size: 20px;
+	}
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+}
+@media screen and (max-width:1500px) {
+	.overlay-content {
+		line-height: 23px;
+		top: 25%;
+	}
+	.overlay a{
+		font-size: 20px;
+	}
+	.openNav{
+		width: 280px !important;
+	}
+	.overlay-content li {
+		margin-left: 34px;
+	}
+	#myNav{
+		height: 85px !important;
+	}
+}
+@media screen and (max-width:1300px) {
+	#menu li a, #menu li.active a, .overlay-cotent li.active a {
+		padding: 18px 7px;
+		display: block;
+		font-size: 1.6vw;
+	}
+	.overlay-content {
+		line-height: 21px;
+		top: 25%;
+	}
+	.overlay a{
+		font-size: 19px;
+	}
+	.openNav{
+		width: 270px !important;
+	}
+	.overlay-content li {
+		margin-left: 34px;
+	}
+	#myNav{
+		height: 85px !important;
+	}
+	#main_content {
+		width: 75%;
+		margin: 0 auto;
+		font-size: 2.5vw !important;
+		line-height: 3vw !important;
+
+	}
+	.page-detail{
+		font-size: 1.6vw !important;
+		line-height: 2.5vw !important;
+	}
+	.page-title{
+		font-size: 2.5vw !important;
+		margin-bottom: 1vw !important;
+	}
+	.aestrisk {
+		font-size: 1.3vw !important;
+	}
+}
+@media screen and (max-width:1100px) {
+	#menu li a, #menu li.active a, .overlay-cotent li.active a {
+		padding: 18px 7px;
+		display: block;
+		font-size: 1.6vw;
+	}
+	.overlay-content {
+		line-height: 19px;
+		top: 25%;
+	}
+	.overlay a{
+		font-size: 19px;
+	}
+	.openNav{
+		width: 260px !important;
+	}
+	.overlay-content li {
+		margin-left: 34px;
+	}
+	#myNav{
+		height: 80px !important;
+	}
+	#main_content {
+		width: 75%;
+		margin: 0 auto;
+		font-size: 2.5vw !important;
+		line-height: 3vw !important;
+
+	}
+	.page-detail{
+		font-size: 1.6vw !important;
+		line-height: 2.5vw !important;
+	}
+	.page-title{
+		font-size: 2.5vw !important;
+		margin-bottom: 1vw !important;
+	}
+	.aestrisk {
+		font-size: 1.3vw !important;
+	}
+}
+@media screen and (max-width:1000px) {
+	#menu li a, #menu li.active a, .overlay-cotent li.active a {
+		padding: 18px 7px;
+		display: block;
+		font-size: 2vw;
+	}
+	.overlay-content {
+		line-height: 19px;
+		top: 25%;
+	}
+	.overlay a{
+		font-size: 18px;
+	}
+	.openNav{
+		width: 255px !important;
+	}
+	.overlay-content li {
+		margin-left: 34px;
+	}
+	#myNav{
+		height: 80px !important;
+	}
+	.icon-Burger{
+		font-size: 23px !important;
+	}
+	#main_content {
+		font-size: 2.5vw !important;
+		line-height: 4.5vw !important;
+	}
+	.page-detail{
+		font-size: 2vw !important;
+		line-height: 3vw !important;
+	}
+	.page-title{
+		font-size: 3vw !important;
+		margin-bottom: 2vw !important;
+	}
+	.aestrisk {
+		font-size: 1.5vw !important;
+	}
+}
+@media screen and (max-width:800px) {
+	#menu li a, #menu li.active a, .overlay-cotent li.active a {
+		padding: 16px 6px;
+		display: block;
+		font-size: 2.5vw;
+	}
+	.overlay-content {
+		line-height: 19px;
+		top: 25%;
+	}
+	.overlay a{
+		font-size: 18px;
+	}
+	.openNav{
+		width: 250px !important;
+	}
+	.overlay-content li {
+		margin-left: 34px;
+	}
+	#myNav{
+		height: 80px !important;
+	}
+	#main_content {
+		font-size: 3vw !important;
+		line-height: 4.8vw !important;
+	}
+	.icon-Burger{
+		font-size: 22px !important;
+	}
+	.page-detail{
+		font-size: 2.5vw !important;
+		line-height: 3vw !important;
+	}
+	.page-title{
+		font-size: 4vw !important;
+		margin-bottom: 2vw !important;
+	}
+	.aestrisk {
+		font-size: 1.5vw !important;
+	}
+}
+@media screen and (max-width:650px) {
+	#menu li a, #menu li.active a, .overlay-cotent li.active a {
+		padding: 13px 6px;
+		display: block;
+		font-size: 3.3vw;
+	}
+	.overlay-content {
+		line-height: 19px;
+		top: 25%;
+	}
+	.overlay a{
+		font-size: 18px;
+	}
+	.openNav{
+		width: 250px !important;
+	}
+	.overlay-content li {
+		margin-left: 34px;
+	}
+	#myNav{
+		height: 80px !important;
+	}
+	.icon-Burger{
+		font-size: 21px !important;
+	}
+	#main_content {
+		font-size: 3.3vw !important;
+		line-height: 4.8vw !important;
+	}
+	.page-detail{
+		font-size: 3vw !important;
+		line-height: 4.5vw !important;
+	}
+	.page-title{
+		font-size: 4.5vw !important;
+		margin-bottom: 2vw !important;
+	}
+	.aestrisk {
+		font-size: 2.2vw !important;
+	}
+}
+@media screen and (max-width:540px) {
+	#menu li a, #menu li.active a, .overlay-cotent li.active a {
+		padding: 15px 6px;
+		display: block;
+		font-size: 3.3vw;
+	}
+	.overlay-content {
+		line-height: 19px;
+		top: 25%;
+	}
+	.overlay a{
+		font-size: 18px;
+	}
+	.openNav{
+		width: 250px !important;
+	}
+	.overlay-content li {
+		margin-left: 34px;
+	}
+	#myNav{
+		height: 80px !important;
+	}
+	#main_content {
+		font-size: 3.3vw !important;
+		line-height: 4.8vw !important;
+	}
+	.icon-Burger{
+		font-size: 20px !important;
+	}
+	.page-detail{
+		font-size: 3.3vw !important;
+		line-height: 4.8vw !important;
+	}
+	.page-title{
+		font-size: 5vw !important;
+		margin-bottom: 2vw !important;
+	}
+	.aestrisk {
+		font-size: 2.2vw !important;
+	}
+	.fp-controlArrow.fp-next,  .fp-controlArrow.fp-prev{
+		background-size: 100% 100%;
+		width: 6vw;
+		height: 14vw;
+	}
+}
+@media screen and (max-width:480px) {
+	#menu li a, #menu li.active a, .overlay-cotent li.active a {
+		padding: 20px 0px;
+		display: block;
+		font-size: 15px;
+	}
+	.overlay-content {
+		line-height: 18px;
+	}
+	.overlay a{
+		font-size: 17px;
+	}
+	.openNav{
+		width: 200px !important;
+	}
+	.overlay-content li {
+		margin-left: 34px;
+	}
+	#myNav{
+		height: 67px !important;
+	}
+	.icon-Burger{
+		font-size: 4vw !important;
+	}
+	#main_content {
+		font-size: 3.3vw !important;
+		line-height: 3.8vw !important;
+	}
+	.aestrisk {
+		font-size: 2.5vw !important;
+	}
+	.page-detail{
+		font-size: 3.5vw !important;
+		line-height: 4vw !important;
+	}
+	.page-title{
+		font-size: 5.7vw !important;
+		margin-bottom: 1vw !important;
+	}
+	.fp-controlArrow.fp-next,  .fp-controlArrow.fp-prev{
+		background-size: 100% 100%;
+		width: 6vw;
+		height: 14vw;
+	}
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+	#main_content{
+		width: 90%;
+		font-size: 14px !important;
+		line-height:17px !important;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	#myNav{
+		margin-top: 67vh !important;
+	}
+	.intro{
+		width: 80% !important;
+		margin-left: 10% !important;
+		margin-right: 10% !important;
+		padding-top: 110px !important;
+		padding-bottom: 50px !important;
+	}
+	.page-title{
+		font-size: 20px !important;
+		line-height: 25px !important;
+	}
+	.page-detail{
+		font-size: 12px !important;
+		line-height: 15px !important;
+	}
+	.aestrisk{
+		font-size: 11px !important;
+	}
+	.fp-controlArrow.fp-next, .fp-controlArrow.fp-prev {
+		background-size: 100% 100%;
+		width: 19px;
+		height: 44px;
+		top: 215px;
+	}
+}
+
+@media only screen and (min-device-width: 412px) and (max-device-height: 732px) and (orientation: landscape) {
+	#main_content{
+		width: 90%;
+		font-size: 14px !important;
+		line-height:17px !important;
+		margin-top: 50px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	#myNav{
+		margin-top:70vh !important;
+	}
+	.intro{
+		width: 80% !important;
+		margin-left: 10% !important;
+		margin-right: 10% !important;
+		padding-top: 110px !important;
+		padding-bottom: 50px !important;
+	}
+	.page-title{
+		font-size: 20px !important;
+		line-height: 25px !important;
+	}
+	.page-detail{
+		font-size: 12px !important;
+		line-height: 15px !important;
+	}
+	.aestrisk{
+		font-size: 11px !important;
+	}
+	.fp-controlArrow.fp-next, .fp-controlArrow.fp-prev {
+		background-size: 100% 100%;
+		width: 19px;
+		height: 44px;
+		top: 225px;
+	}
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) {
+	#myNav{
+		margin-top: 58vh;
+	}
+	#main_content{
+		width: 90%;
+		font-size: 14px !important;
+		line-height:17px !important;
+		margin-top: 50px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.intro{
+		width: 80% !important;
+		margin-left: 10% !important;
+		margin-right: 10% !important;
+		padding-top: 110px !important;
+		padding-bottom: 50px !important;
+	}
+	.page-title{
+		font-size: 20px !important;
+		line-height: 25px !important;
+	}
+	.page-detail{
+		font-size: 12px !important;
+		line-height: 15px !important;
+	}
+	.aestrisk{
+		font-size: 11px !important;
+	}
+	.fp-controlArrow.fp-next, .fp-controlArrow.fp-prev {
+		background-size: 100% 100%;
+		width: 19px;
+		height: 44px;
+		top: 225px !important;
+	}
+}
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+	#main_content{
+		width: 90%;
+		font-size: 14px !important;
+		line-height:17px !important;
+		margin-top: 50px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.intro{
+		width: 80% !important;
+		margin-left: 10% !important;
+		margin-right: 10% !important;
+		padding-top: 110px !important;
+		padding-bottom: 50px !important;
+	}
+	.page-title{
+		font-size: 20px !important;
+		line-height: 25px !important;
+	}
+	.page-detail{
+		font-size: 12px !important;
+		line-height: 15px !important;
+	}
+	.aestrisk{
+		font-size: 11px !important;
+	}
+	.fp-controlArrow.fp-next, .fp-controlArrow.fp-prev {
+		background-size: 100% 100%;
+		width: 19px;
+		height: 44px;
+		top: 215px;
+	}
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+	#main_content{
+		width: 90%;
+		font-size: 13px !important;
+		line-height: 15px !important;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 50px;
+	}
+	#menu{
+		height:50px;
+	}
+	.burgerIco{
+		margin-top: 16px;
+	}
+	.heightSet{
+		font-size: 10px;
+		line-height: 13px;
+	}
+	.intro{
+		width: 80% !important;
+		margin-left: 10% !important;
+		margin-right: 10% !important;
+		padding-top: 110px !important;
+		padding-bottom: 50px !important;
+	}
+	.page-title{
+		font-size: 18px !important;
+		line-height: 20px !important;
+	}
+	.page-detail{
+		font-size: 10px !important;
+		line-height: 12px !important;
+	}
+	.aestrisk{
+		font-size: 8px !important;
+	}
+	.fp-controlArrow.fp-next, .fp-controlArrow.fp-prev {
+		background-size: 100% 100%;
+		width: 19px;
+		height: 44px;
+		top: 190px;
+	}
+	#myNav{
+		margin-top:120px !important;
+	}
+}
+@media screen and (max-width:383px) {
+	#menu li a, #menu li.active a, .overlay-cotent li.active a {
+		padding: 20px 0px;
+		display: block;
+		font-size: 12px;
+	}
+	.overlay-content {
+		line-height: 15px;
+	}
+	.overlay a{
+		font-size: 15px;
+	}
+	.openNav{
+		width: 170px !important;
+	}
+	.overlay-content li {
+		margin-left: 34px;
+	}
+	#myNav{
+		height: 55px !important;
+		margin-top: 350px;
+	}
+	#main_content {
+		font-size: 3.8vw !important;
+		line-height: 4.3vw !important;
+		margin-top: 50px;
+	}
+	.aestrisk {
+		font-size: 3.2vw !important;
+	}
+	.page-detail{
+		font-size: 3.5vw !important;
+		line-height: 4.5vw !important;
+	}
+	.page-title{
+		font-size: 5.7vw !important;
+		margin-bottom: 1vw !important;
+	}
+	.fp-controlArrow.fp-next,  .fp-controlArrow.fp-prev{
+		background-size: 100% 100%;
+		width: 6vw;
+		height: 14vw;
+	}
+	.burgerIco {
+		margin-top: 21px;
+	}
+	.icon-Burger{
+		font-size: 4.7vw !important;
+	}
+}

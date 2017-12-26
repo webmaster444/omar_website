@@ -5,6 +5,6 @@ $('.menu-toggle').click(function() {
 
 })
 
-$(document).ready(function(){
-	// $('nav a').pageNav({'scroll_shift': $('nav').outerHeight() + 20});
+$(document).ready(function(){    
+    $("#home_advance").trigger("click");            
 })
