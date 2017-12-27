@@ -143,9 +143,7 @@ li.current a{
     color: rgba(255, 255, 255, .4);
 }
 
-.content_wrapper{
-  padding:70px 15px 30px;
-}
+
 
 img{
   max-width: 100%;
@@ -161,17 +159,25 @@ h2.section_title{
 }
 
 p{
-font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;  
   font-style: normal;
   font-variant: normal;
-  font-weight: 400;
-  line-height: 20px;
+  font-weight: 400;  
+}
+
+#main_content p{
+
 }
 .half{
     width:100%;
 }
+.content_wrapper{
+    padding:70px 0px 30px;
+}
 @media (min-width: 780px) {
+    .content_wrapper{
+      padding:70px 15px 30px;
+    }
     .half{
       width: 50%;
       float: left;
