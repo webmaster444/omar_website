@@ -174,7 +174,7 @@ font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 .content_wrapper{
     padding:70px 0px 30px;
 }
-@media (min-width: 780px) {    
+@media (min-width: 780px) {        
     .half{
       width: 50%;
       float: left;
@@ -248,11 +248,21 @@ nav a.logo:hover, nav a.logo:focus{
 h3.widget_title{
     text-align: left;
 }
+.footer_container{
+    max-width: 580px;
+    margin: 0 auto;
+}
+.widget_wrapper:nth-child(2){
+    padding-left: 200px;
+}
 @media (max-width: 767px) {
     .widget_wrapper{
         text-align: center;
+        width: 100%;
     }
-
+.widget_wrapper:nth-child(2){
+    padding-left: 0;
+}
     h3.widget_title{
         text-align: center;
     }
