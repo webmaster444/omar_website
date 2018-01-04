@@ -175,6 +175,9 @@ font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     padding:70px 0px 30px;
 }
 @media (min-width: 780px) {        
+    .peace_img_wrapper img{
+        margin-top: -80px;
+    }
     .half{
       width: 50%;
       float: left;
