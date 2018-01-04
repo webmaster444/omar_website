@@ -174,7 +174,11 @@ font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 .content_wrapper{
     padding:70px 0px 30px;
 }
+
 @media (min-width: 780px) {        
+    p{
+        font-size: 18px;
+    }
     .peace_img_wrapper img{
         margin-top: -80px;
     }
