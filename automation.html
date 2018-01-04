@@ -34,8 +34,10 @@
          <div class="content_wrapper">
           <div class="container">
             <section id="automation_section">               
-               <p>We’re technology pragmatic, which means we like to go with whatever is the best tool for the job.</p>
-               <p>Scenario: See picture<br/>
+               <p>We specify examples and automate the specification as business-facing tests. Lets step through an example to illustrate:</p>
+               <p>Lets say we want to build a feature. A basic picture which I can alter on screen via a set of controls. 
+Lets go ahead and specify behaviours we want to see. As examples:</p>
+               <p>Scenario: Show picture<br/>
                   Given i am on the Testclub website<br/>
                   And i am on the Automation page<br/>
                   When i opt to see the picture<br/>
@@ -59,22 +61,14 @@
                   Given i am on the Testclub website<br/>
                   And i am on the automation page<br/>
                   And i see the picture<br/>
-                  And i put the <br/>
-                  <link_colour><br/>
-                  on<br/>
-                  And i see the <br/>
-                  <rect_colour><br/>
-                  rectangles<br/>
-                  When i put the <br/>
-                  <link colour><br/>
-                  link off<br/>
-                  Then i dont see the <br/>
-                  <rect_colour><br/>
-                  rectangles<br/>
+                  And i put the <link_colour> on<br/>
+                  And i see the <rect_colour> rectangles<br/>
+                  When i put the <link colour>link off<br/>
+                  Then i dont see the <rect_colour> rectangles<br/>
                </p>
                <p>Examples:<br/>
                   | link_colour | rect_colour |<br/>
-                  | black          | black          <br/>|
+                  | black          | black          |<br/>
                   | red              | red             |<br/>
                   | blue            | blue            |<br/>
                   | yellow         | yellow         |<br/>
@@ -84,11 +78,8 @@
                   Given i am on the Testclub website<br/>
                   And i am on the automation page<br/>
                   And i see the picture<br/>
-                  When i click the <br/>
-                  <rotation_direction><br/>
-                  link<br/>
-                  Then the picture rotates 90 degrees to the <br/>
-                  <rotation_direction><br/>
+                  When i click the <rotation_direction> link<br/>
+                  Then the picture rotates 90 degrees to the <rotation_direction><br/>
                </p>
                <p>| rotation_direction |<br/>
                   | left                        |<br/>
@@ -98,6 +89,9 @@
                   | right                      |<br/>
                </p>
                
+               <p>You don’t need to be technical to read what these tests do. Anybody interested in how the software can contribute.</p>
+               <p>Let's create the feature… ok, here it is:</p>
+
                <div class="content">
                  <div id="button_wrapper">
 <!--                      <div data-toggle="buttons">
@@ -177,6 +171,16 @@
                      <img src="imgs/yellow-01.png" id="yellow_img" />
                      <div class="clearfix"></div>
                  </div>
+             </div>
+<div class="clearfix"></div>
+             <div class="row">
+
+<p>We can execute our tests / active specification:</p>
+<p>[embed video]</p>
+<p>And it passes the functional contract we wrote and agreed</p>
+<p>The test is a machine performing a series of automated checks. Nothing very clever or useful in itself. </p>
+<p>The useful thing here in terms of risk mitigation was the upfront effort expended in writing a behavioural contract that specified exactly what we wanted our program to do.</p>
+<p>We’re technology pragmatic, meaning we write automated test with the best tool for the job in the context of your project. </p>
              </div>
             </section>
           </div>
