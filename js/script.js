@@ -1,4 +1,5 @@
 $('.menu-toggle').click(function() {
+	$('.mobile_menu_wrapper').toggleClass('show');
   $('ul').toggleClass('opening');
   $(this).toggleClass('open');
 })
