@@ -113,12 +113,7 @@ nav ul {
 nav ul.opening {
     display: block;    
 }
-nav li {
-    border-bottom: 1px solid #f6f4e2;
-}
-nav li:last-child {
-    border-bottom: none;
-}
+
 nav a {
     color: black;
     background: #fff;
@@ -179,7 +174,7 @@ a:hover{
 }
 @media (min-width: 780px) {        
     .contact_li a img{
-        width: 20px;
+        width: 30px;
     }
     p{
         font-size: 18px;
@@ -264,8 +259,19 @@ h3.widget_title{
     max-width: 580px;
     margin: 0 auto;
 }
-
+.mobile_only{
+    display: none;
+}
+.desktop_only{
+    display: block;
+}
 @media (max-width: 767px) {
+    .desktop_only{
+        display: none;
+    }
+    .mobile_only{
+        display: block;
+    }
     nav li a{
         font-weight: 700;
         font-size: 25px;
@@ -297,8 +303,5 @@ h3.widget_title{
 
     .widget_wrapper .pull-right{
         float:none;
-    }
-    li.contact_li{
-        display: none;
-    }
+    }    
 }
