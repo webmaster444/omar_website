@@ -197,6 +197,9 @@ a:hover{
     nav li {
         border: none;
     }
+    nav .contact_li.desktop_only a{
+        padding-top: 0.5em;
+    }
     nav li a {
         padding: 1.5em 1.3em 1.5em 1.3em;
         margin: 0;
