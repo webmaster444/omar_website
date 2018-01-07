@@ -35,14 +35,17 @@ text{
 	position: relative;	
 }
 #button_wrapper label.btn.checked{
-	border:1px solid blue;
-	border-bottom:2px solid blue;
+	border:2px solid #51b1e3;
+	border-bottom:4px solid #51b1e3;
 }
 
 #button_wrapper label.btn{
 	background: white;
-	border:1px solid black;
+	border:2px solid black;
 	color: black;
+	font-weight: 700;
+	width: 100px;
+	margin: 10px;
 }
 
 #button_wrapper input[type="checkbox"]{
