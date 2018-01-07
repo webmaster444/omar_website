@@ -34,6 +34,20 @@ text{
 	box-sizing: border-box;
 	position: relative;	
 }
+#button_wrapper label.btn.checked{
+	border:1px solid blue;
+	border-bottom:2px solid blue;
+}
+
+#button_wrapper label.btn{
+	background: white;
+	border:1px solid black;
+	color: black;
+}
+
+#button_wrapper input[type="checkbox"]{
+	display: none;
+}
 
 #button_wrapper a:hover {
     color: #fff;

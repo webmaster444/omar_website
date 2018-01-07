@@ -64,4 +64,9 @@ $(function(){
         angle -=90;
         $("#imgs_wrapper").rotate(angle);
     });
+
+
+    $('input[type="checkbox"]').change(function() {        
+        $(this).parent('label').toggleClass('checked');        
+    });
 })
