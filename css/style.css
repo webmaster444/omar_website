@@ -234,6 +234,7 @@ nav a.logo{
 
 nav a.logo img{
     max-width: 45px;    
+    margin-top: -20px;
 }
 
 span.logo_txt{
