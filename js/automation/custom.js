@@ -13,7 +13,7 @@ $(function(){
 
     $('#linesBtn').change(function() {
         var clicked = $(this).is(":checked");
-        if(!clicked){
+        if(clicked){
             $('#line_img').css('opacity',0);
         }else{
             $('#line_img').css('opacity',1);
@@ -22,7 +22,7 @@ $(function(){
 
     $('#redBtn').change(function() {
         var clicked = $(this).is(":checked");
-        if(!clicked){
+        if(clicked){
             $('#red_img').css('opacity',0);
         }else{
             $('#red_img').css('opacity',1);
@@ -31,7 +31,7 @@ $(function(){
 
     $('#blueBtn').change(function() {
         var clicked = $(this).is(":checked");
-        if(!clicked){
+        if(clicked){
             $('#blue_img').css('opacity',0);
         }else{
             $('#blue_img').css('opacity',1);
@@ -39,7 +39,7 @@ $(function(){
     });        
     $('#blackBtn').change(function() {
         var clicked = $(this).is(":checked");
-        if(!clicked){
+        if(clicked){
             $('#black_img').css('opacity',0);
         }else{
             $('#black_img').css('opacity',1);
@@ -48,7 +48,7 @@ $(function(){
 
     $('#yellowBtn').change(function() {
         var clicked = $(this).is(":checked");
-        if(!clicked){
+        if(clicked){
             $('#yellow_img').css('opacity',0);
         }else{
             $('#yellow_img').css('opacity',1);
