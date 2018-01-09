@@ -38,15 +38,27 @@
             <div class="container">
                 <section id="position_section">
                     <div class="row">
+                        <div class='col-sm-12'>
                         <p>Everything is vague to a degree you do not realise till you have tried to make it precise <span>Bertrand Russell - The Philosophy of Logical Atomism</span></p>
-                        <p>^ This gets straight to the heart of why elaborating specifications is the most important thing we do. And why your process around it can be improved.</p>
+                        <p>This gets straight to the heart of why elaborating specifications is the most important thing we do. And why your process around it can be improved.</p>
+                    </div>
+                </div>
+                <div class="row vertical_wrapper">
+                    <div class='col-sm-6 vertical_block'>
                         <p>Risk = Cost * Probability</p>
+                    </div>
+                    <div class="col-sm-6 vertical_block">
                         <img src="imgs/risk.png" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
                         <p>Your risk magnitude is the product of the cost and the probability of failure. Below we outline how our processes can materially reduce your risk through reduction of both factors.</p>
                         <p>Below is a pimped-up version of the ancient* V-Model. Its still a model of verification, where technical specifications are verified by unit tests, system specifications are verified by component tests and requirements get verified
                             by acceptance tests.</p>
+                                          
                         <p><span>*</span>by the standards of our industry!</p>
-                        <img src="imgs/position8.jpeg" />
+                        <img src="imgs/position8.jpeg" style="max-width:300px;"/>
                         <p>..but what’s interesting here is:</p>
 
                         <p>The relative costs of rectifying something gone wrong at each stage</p>
@@ -56,20 +68,22 @@
                         <p>Finding problems late is expensive. Realising you haven’t built the product your customer actually wants is very expensive! Tech problems are cheaper to fix than conceptual problems. </p>
 
                         <p>Are we building the right thing? is more important than Are we building the thing right?</p>
-                        <p>Specification by Example</p>
+                        <p>Specification by Example</p>            
 
-
-                        <p class='quote'>We can bridge the communication gap by communicating intent, getting different roles involved in nailing down the requirements and exploiting the relationships between tests, examples and requirements. We can use realistic examples
-                            consistently throughout the project to avoid the translation and minimise the effect of the telephone game*, saving information from falling through the communication gaps. In order to ensure that the initial set of examples
-                            is good enough for development and testing, programmers and testers have to get involved in defining them. The discussion about these examples builds up a shared understanding of the domain, flushing out small communication
-                            problems straight from the start<span>- Gojko Adzic - Bridging the Communication Gap</span></p>
+                        <p class='quote'>We can bridge the communication gap by communicating intent, getting different roles involved in nailing down the requirements and exploiting the relationships between tests, examples and requirements. We can use realistic examples consistently throughout the project to avoid the translation and minimise the effect of the telephone game*, saving information from falling through the communication gaps. In order to ensure that the initial set of examples is good enough for development and testing, programmers and testers have to get involved in defining them. The discussion about these examples builds up a shared understanding of the domain, flushing out small communication problems straight from the start<span>- Gojko Adzic - Bridging the Communication Gap</span></p>
                         <p><span class="required">*</span>often called ‘chinese whispers' in the uk</p>
-                        <p>What it’s not:Specification by example is not a test technique nor is it a dev technique. </p>
-                        <p>[The term 'Specification by Example' a bit of a mouthful. Its also spoken of as 'Agile Acceptance Testing’ or 'Behaviour Driven Development’, we need a better name]</p>
-                        <p>So what is it?:Its a communication technique. A natural and elegant process for elaborating software business rules. The biggest benefit of Specification by Example is improved communication and mutual understanding across your
-                            implementation team, not testing or automation</p>
+                    </div>
+                </div>
+                <div class="row vertical_wrapper">
+                    <div class="col-sm-6 vertical_block">
                         <img src="imgs/requirementtest.png" />
+                    </div>
+                    <div class="col-sm-6 vertical_block">                        
                         <p class="quote">Writing requirements and testing are interrelated, much like the 2 sides of a Mobius strip<span> Robert C Martin - Tests and Requirements, Requirements and tests</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
                         <p>Classical project requirements focus on what but not on why. These are called Imperative requirements, and they are effectively a proposed solution to a problem without investigating what the problem actually is. They give a false
                             impression of an exacting specification. Lets look at Dan North’ classic example of withdrawing cash from an ATM:</p>
                         <p>An imperative requirement might be:</p>
@@ -108,18 +122,28 @@ Then the ATM should not dispense any money
                         <p>Seems a bit more work upfront! It is</p>
                         <p>Maybe better to do this at reqs stage rather than unrooting real problems late when they're multiples of the cost to fix though? You’re getting the hang of this..</p>
 
-                        <p>Also, we'll want to automate these examples. For a computer to run them they need to be exact. This is essentially bringing testing questions and scripting rigour to the requirements process. The specifications become tests.</p>
+                        <p>Also, we'll want to automate these examples. For a computer to run them they need to be exact.</p></div></div>
+                        <div class="row vertical_wrapper">
+                        <div class="col-sm-6 vertical_block">
+                        <p> This is essentially bringing testing questions and scripting rigour to the requirements process. The specifications become tests.</p></div>
+                        <div class="col-sm-6 vertical_block">
                         <img src="imgs/3circles.jpg" />
-
+                    </div></div>
+<div class="row">
+    <div class="col-sm-12">
                         <p>User stories provide a high level plan and facilitate discussion, but they do not specify any details. Agile acceptance tests, on the other hand, provide specification details but do not even try to put things into a wider perspective.
                             Used together, these two techniques really complement each other. </p>
-
+</div></div>
+<div class="row vertical_wrapper">
+    <div class="col-sm-6 vertical_block">
                         <p>Relating to the ‘Three Cs of agile’:</p>
-
+</div>
+<div class='col-sm-6 vertical_block'>
                         <p>Card = User Story (aka scope or big picture)</p>
                         <p>Conversations = Spec by examples process (leading to detailed spec ironed out before/during iteration)</p>
                         <p>Confirmations = Automated behavioural tests</p>
                     </div>
+                </div>
                 </section>
             </div>
         </div>

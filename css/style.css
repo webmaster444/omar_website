@@ -170,7 +170,7 @@ font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 a:hover{
     text-decoration: none;
 }
-@media (min-width: 780px) {        
+@media (min-width: 780px) {            
     .contact_li a img{
         width: 30px;
     }
@@ -186,6 +186,9 @@ a:hover{
     }
     .menu-toggle {
         display: none;
+    }
+    .success_or_fail{
+        margin-bottom: 100px;
     }
     nav ul {
         display: flex;
@@ -267,6 +270,16 @@ h3.widget_title{
 .desktop_only{
     display: block;
 }
+
+.vertical_wrapper{
+    display: inline;
+}
+
+.vertical_block{
+    vertical-align: middle;
+    display: inline-block;
+}
+
 @media (max-width: 767px) {
     .desktop_only{
         display: none;
