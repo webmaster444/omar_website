@@ -10,7 +10,10 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-
+.container {
+    max-width: 1000px;    
+    margin: 0 auto;
+}
 header {
     background: #f04343;
     color: #f7e9cc;
@@ -198,7 +201,7 @@ a:hover{
         padding-top: 0.5em;
     }
     nav li a {
-        padding: 1.5em 1.3em 1.5em 1.3em;
+        padding: 1.5em .5em 1.5em .3em;
         margin: 0;
         border: none;        
     }
