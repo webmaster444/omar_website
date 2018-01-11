@@ -163,8 +163,8 @@ font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 400;  
 }
 
-#main_content p{
-
+#main_content img{
+    margin-bottom: 30px;
 }
 .half{
     width:100%;
