@@ -40,7 +40,7 @@
                 <section id="position_section">
                     <div class="row">
                         <div class='col-sm-12'>
-                        <p><span class="orange">Everything is vague to a degree you do not realise till you have tried to make it precise</span> <span class="darkgray smaller">Bertrand Russell - The Philosophy of Logical Atomism</span></p>
+                        <p><span class="orange">Everything is vague to a degree you do not realise till you have tried to make it precise</span><br/> <span class="darkgray smaller">Bertrand Russell - The Philosophy of Logical Atomism</span></p>
                         <p>This gets straight to the heart of why elaborating specifications is the most important thing we do. And why your process around it can be improved.</p>
                     </div>
                 </div>
@@ -55,8 +55,16 @@
                         <p>Below is a pimped-up version of the ancient* V-Model. Its still a model of verification, where technical specifications are verified by unit tests, system specifications are verified by component tests and requirements get verified
                             by acceptance tests.</p>
                                           
-                        <p><span>*</span>by the standards of our industry!</p>
-                        <img src="imgs/position8.jpeg" style="max-width:300px;"/>
+                        <p><span class="required">*</span><span class="smaller">by the standards of our industry!</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2 text-center" >
+                        <img src="imgs/position8.jpeg" style="max-width:600px;"/>
+                    </div>
+                    </div>
+                        <div class="row">
+                            <div class="col-sm-12">
                         <p>What’s actually interesting here is:</p>
                         <ul>
                         <li>The relative costs of rectifying something gone wrong at each stage</li>
@@ -71,13 +79,13 @@
                         <p class="bigger">Specification by Example</p>            
                         <p> <span class="bigger blue">So what is it?</span> It's a communication technique. A natural and elegant process for elaborating software business rules. The biggest benefit of Specification by Example is not testing or automation but improved communication and mutual understanding across your implementation team</p>
 
-                        <p class='green'>We can bridge the communication gap by communicating intent, getting different roles involved in nailing down the requirements and exploiting the relationships between tests, examples and requirements. We can use realistic examples consistently throughout the project to avoid the translation and minimise the effect of the telephone game*, saving information from falling through the communication gaps. In order to ensure that the initial set of examples is good enough for development and testing, programmers and testers have to get involved in defining them. The discussion about these examples builds up a shared understanding of the domain, flushing out small communication problems straight from the start<span class="smaller darkgray">- Gojko Adzic - Bridging the Communication Gap</span></p>
+                        <p class='green'>We can bridge the communication gap by communicating intent, getting different roles involved in nailing down the requirements and exploiting the relationships between tests, examples and requirements. We can use realistic examples consistently throughout the project to avoid the translation and minimise the effect of the telephone game*, saving information from falling through the communication gaps. In order to ensure that the initial set of examples is good enough for development and testing, programmers and testers have to get involved in defining them. The discussion about these examples builds up a shared understanding of the domain, flushing out small communication problems straight from the start<br/><span class="smaller darkgray">Gojko Adzic - Bridging the Communication Gap</span></p>
                         <p><span class="required">*</span><span class="darkgray smaller">often called ‘chinese whispers' in the uk</span></p>
                     </div>
                 </div>
                 <div class="row vertical_wrapper">
                     <div class="col-sm-8 offset-sm-2">
-                        <img src="imgs/spec2.png" />
+                        <img src="imgs/spec21.png" />
                     </div>
                 </div>
                 <div class="row">
@@ -89,28 +97,28 @@
 
                         <p class="darkgray">Story: Account Holder withdraws cash</p>
 
-                        <span class="darkgray">As an Account Holder
-I want to withdraw cash from an ATM
-So that I can get money when the bank is closed
- 
-Scenario 1: Account has sufficient funds
-Given the account balance is \$100
- And the card is valid
- And the machine contains enough money
-When the Account Holder requests \$20
-Then the ATM should dispense \$20
- And the account balance should be \$80
- And the card should be returned
- 
-Scenario 2: Account has insufficient funds
-Given the account balance is \$10
- And the card is valid
- And the machine contains enough money
-When the Account Holder requests \$20
-Then the ATM should not dispense any money
- And the ATM should say there are insufficient funds
- And the account balance should be \$20
- And the card should be returned </span>
+                        <span class="darkgray">As an Account Holder<br/>
+I want to withdraw cash from an ATM<br/>
+So that I can get money when the bank is closed<br/>
+ <br/>
+Scenario 1: Account has sufficient funds<br/>
+Given the account balance is \$100<br/>
+ And the card is valid<br/>
+ And the machine contains enough money<br/>
+When the Account Holder requests \$20<br/>
+Then the ATM should dispense \$20<br/>
+ And the account balance should be \$80<br/>
+ And the card should be returned<br/>
+ <br/>
+Scenario 2: Account has insufficient funds<br/>
+Given the account balance is \$10<br/>
+ And the card is valid<br/>
+ And the machine contains enough money<br/>
+When the Account Holder requests \$20<br/>
+Then the ATM should not dispense any money<br/>
+ And the ATM should say there are insufficient funds<br/>
+ And the account balance should be \$20<br/>
+ And the card should be returned </span><br/><br/>
                         <p>After reading these can you think of other examples? Of course you can! Reading examples stimulates your brain and thats a natural process. <span class="smaller">What about using different debits and limits? when withdrawal take account over overdraft facilities? What should happen around boundaries?</span><span class="bigger"> Should the machine ever retain the card?</span></p>
 
                         <p> Realistic examples make us think harder and leave far less chance for misunderstanding. It becomes easier to spot gaps, missed cases and inconsistencies. </p>
