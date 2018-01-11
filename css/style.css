@@ -330,6 +330,12 @@ span.smaller{
 img.half_width{
     max-width: 200px;
 }
+
+.scenario_wrapper p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+}
 @media (max-width: 767px) {
     p.half_width{
         font-size: 12px;
