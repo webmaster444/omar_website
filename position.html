@@ -30,6 +30,7 @@
                     <li><a href="automation.html">Automation</a></li>
                     <li><a href="benefits.html">Benefits</a></li>
                     <li><a href="bespoke.html">Bespoke</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </div>
             </div>
@@ -37,7 +38,8 @@
         <div class="content_wrapper">
             <div class="container">
                 <section id="position_section">
-                    <p>The testing world is pretty big. We want you to know where we sit. There’s a lot of confusion around testing so here’s a (2 minute read) primer:</p>
+                    <p>The testing world is big. There’s a lot of confusion around <span class="smaller">testing so here’s a</span> <span class="darkgray">(3 minute read)</span> primer. </p>
+                    <p>We also want you to know where we sit in the testing world:</p>
                     <div class="row vertical_wrapper">
                         <div class="col-sm-6 vertical_block">
                             <p>Know that this is?</p>
@@ -46,8 +48,7 @@
                             <img src="imgs/position1.jpeg" alt="Position 1" />
                         </div>
                     </div>
-                    <p>Its a brake release spring from a bike. Its small but pretty important because it releases your brake when you release the lever. You could say its a unit because it has no smaller parts. Its not dependent on any other parts and its easily tested in isolation.
-
+                    <p>Its a brake release spring from a bike. Its small but important because it releases the brake when you release the lever (stops the bike stopping!). You could say its a unit because it has no smaller parts. Its not dependent on any other parts and its easily tested in isolation</p>
                     <div class="row vertical_wrapper">
                     <div class="col-sm-6 vertical_block">
                         <img src="imgs/position2.jpeg" alt="Position 2" />                        
@@ -56,8 +57,7 @@
                         <p>Put under specified tension and release</p>
                     </div>
                 </div>
-                    <p>Unit tests verify individual components of a complex system. A unit can be tested independently of the other parts of that system. These tests are cool because they let us know whether each of the the small parts of a system work in
-                        isolation. Unit tests are best written by developers because they are close to the code. The tests can be run quickly and efficiently by computers so its good to have loads of them. </p>
+                    <p>Unit tests verify individual components of a complex system. A unit can be tested independently of the other parts of that system. These tests are cool because they let us know whether each of the the small parts of a system work in isolation. Unit tests are best written by developers because they are close to the code. The tests can be run quickly and efficiently by computers so its good to have many of them</p>
 
                     <div class="row vertical_wrapper">
                         <div class="col-sm-3 vertical_block">
@@ -81,7 +81,7 @@
                         <div class="col-sm-12">
                         <p>The spring above is part of this brake, but the brake has a lot of other small parts too. A brake is a component of a bike. </p>
                     
-                        <p>Any given system has lots of components. There’ll likely be components within components, and there will certainly be joining of components. These‘ll need testing and so will the interfaces between them. You’ll likely also hear these referred to as functional tests. Integration tests are component tests involving interfaces. We might test this component works by squeezing and releasing the brake lever and checking the brake closes and opens.</p>
+                        <p>Any given system has lots of components. There’ll likely be components within components, and there will certainly be joining of components. These‘ll need testing. You may also hear these referred to as functional tests. Integration tests are component tests involving interfaces</p>
                         </div>
                     </div>
                     <div class="row vertical_wrapper">
@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 <div class='row'>
-                        <p>Component tests are unsatisfactory in isolation because they neither tell you the whole system works or where exactly something one wrong. Unit and component tests come from the inside-out. Driven by knowledge of how the system
+                        <p>Component tests are unsatisfactory in isolation because they neither tell you the whole system works or where exactly something one wrong. Unit and component tests come from the <span class="orange">inside-out:</span> driven by knowledge of how the system
                             is built.</p>
                     </div>
 
@@ -119,7 +119,7 @@
                 </div>
                     <div class="row">
                         <div class="col-sm-12">
-                        <p>What will a user of this system care about when they want to use it? They'll care about what it does (its behaviours) rather than the parts its made from. Everybody knows what a bike should do - you don’t need be a bike mechanic!</p>
+                        <p>What will a user of this system care about when they want to use it? They'll only have regard for what it does (<span class="orange"> behaviours</span>) rather than the parts its made from. Everybody knows what a bike should do - you don’t need be a bike mechanic</p>
                         <p>This is where behavioural testing comes in. </p>
                     </div>
                     </div>
@@ -128,13 +128,13 @@
                             <img src="imgs/position6.jpeg" alt="Position 6" />
                         </div>
                         <div class="col-sm-6 vertical_block">
-                            <p>We don’t even need to outline the ways you would test the bike because you know them already.</p>
+                            <p>No need to outline the ways you’d test a bike. You’ve known them since you were 4</p>
                         </div>                        
                         
-                        <p>Behavioural (aka black-box) testing is outside-in. This general type of test doesn’t need (or want) knowledge of how the system is built</p>
+                        <p>Behavioural (aka black-box) tests are <span class="orange">outside-in:</span> don’t need (or want) knowledge of how the system is built</p>
 
                         <p class="text-center">Input -> System -> Output</p>
-                        <p>..like getting in a car and verifying that it drives forward, with no concern for whats under the bonnet</p>
+                        <p>..like getting in a car and verifying that it drives forward, without concern for whats under the bonnet</p>
                     </div>
                     <div class="row">
                         <div class="col-sm-6">
@@ -146,9 +146,9 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                        <p>These automated black-box acceptance tests. We call these tests behavioural because they are produced from a BDD (behaviour-driven-development aka specification by example) process.</p>
+                        <p>What we’re describing are automated black-box acceptance tests but we call them behavioural because they are produced from a specification by example (BDD) process</p>
 
-                        <p>The purpose of such tests comes not from independence but from inter-dependence of parts working together. Behavioural tests check the functional contract by exercising the system holistically. If the contract is broken we look (inside) at lower level tests.</p>
+                        <p>The purpose of such tests comes <span class="darkgray">not from independence but from inter-dependence</span> of parts working together. Behavioural tests check the functional contract by exercising the system holistically. If the contract is broken we look under the bonnet at lower level tests</p>
                         </div>
                     </div>
                     <div class="row vertical_wrapper">
@@ -156,45 +156,44 @@
                             <img src="imgs/behaviourtest.png">
                         </div>
                         <div class="col-sm-9 vertical_block">
-                            <p class="success_or_fail">This behaviour is as we want it </p>
+                            <p class="success_or_fail">Behaviour is as we specified</p>
                             <p>Behaviour is not as we specified. Check component tests</p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-sm-12">
-                        <p>Some may discuss whether to have unit and component tests OR behavioural tests [TDD vs BDD]. This is a misguided notion and in 2018 you need both. They cover completely different aspects and complement each other beautifully! </p>
+                        <p><span class="smaller">Some may discuss whether to have unit and component tests OR behavioural tests [TDD vs BDD]. This is a misguided notion and in 2018</span><span class="bigger"> you need both. They cover completely different aspects and complement each other beautifully! </span></p>
 
 
                         <p>Relative # of tests heuristic -></p>
                         <img src="imgs/position7.jpeg" alt="Position 7" />
-                        <p>After all that about testing. Please take a look at the SPEC page to discover why we think the tests are not the most important thing..</p>
+                        <p>After all this talk of testing. Please check the SPEC page to see what we think <span class="bigger orange">is more important than testing</span></p>
                     </div>
                     </div>
                 </section>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            <div class="widget_wrapper half pull-left">
-                <h3 class="widget_title">TestClubIO</h3>
-                <p>Platf9rm</p>
-                <p>Floor 5, 4 North Road, Brighton </p>
-                <p>England</p>
-                <p>BN11YR</p>
-            </div>
-            <div class="widget_wrapper half pull-right">
-                <div class="pull-right">
-                <h3 class="widget_title">Say hello</h3>
-                <a href="mailto:hi@testclub.io">hi@testclub.io</a><br/>
-                <a href="tel:07557026029">07557 026029</a>
-            </div>
-            </div>
-
-            <div class="clearfix"></div>
-        </div>
-    </footer>
+      <footer id="footer">
+         <div class="container">
+         <div class="widget_wrapper half pull-left">
+            <h3 class="widget_title">TestClub</h3>
+            <span>Platf9rm<br/>
+            Floor 5, 4 North Road, Brighton <br/>            
+            BN11YR</span>
+         </div>
+         <div class="widget_wrapper half pull-right">
+            <div class="pull-right">
+            <h3 class="widget_title">Say hello</h3>
+            <a href="mailto:hi@testclub.io">hi@testclub.io</a><br/>
+            <a href="tel:07557026029">01273 444555</a>
+         </div>
+         </div>
+         
+         <div class="clearfix"></div>
+         </div>
+      </footer> 
     <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/jquery.pagenav.js"></script>
