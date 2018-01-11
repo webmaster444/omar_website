@@ -31,6 +31,15 @@ footer a{
     color: white;
     text-decoration: underline;
 }
+.required{
+    color:red;
+}
+.blue{
+    color: #0096ff;
+}
+.green{
+    color: #00f900;
+}
 .orange{
     color: #ff9300;
 }

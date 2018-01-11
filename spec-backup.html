@@ -44,34 +44,34 @@
                     </div>
                 </div>
                 <div class="row vertical_wrapper">
-                    <div class='col-sm-8 offset-sm-2'>
-                        <img src='imgs/spec1.png' />
+                    <div class='col-sm-6 vertical_block'>
+                        <p>Risk = Cost * Probability</p>
+                    </div>
+                    <div class="col-sm-6 vertical_block">
+                        <img src="imgs/risk.png" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <p><span class="bigger">The size of your risk is the product of cost and probability of failure.</span>Below we outline how our processes can materially reduce your risk through reduction of both factors.</p>
+                        <p>Your risk magnitude is the product of the cost and the probability of failure. Below we outline how our processes can materially reduce your risk through reduction of both factors.</p>
                         <p>Below is a pimped-up version of the ancient* V-Model. Its still a model of verification, where technical specifications are verified by unit tests, system specifications are verified by component tests and requirements get verified
                             by acceptance tests.</p>
                                           
                         <p><span>*</span>by the standards of our industry!</p>
                         <img src="imgs/position8.jpeg" style="max-width:300px;"/>
-                        <p>What’s actually interesting here is:</p>
-                        <ul>
-                        <li>The relative costs of rectifying something gone wrong at each stage</li>
-                        <li>The top row, where a business case gets verified only by the software in the hands of end-users</li>
-                        </ul>
+                        <p>..but what’s interesting here is:</p>
 
-                        <p>Finding problems late is expensive. Realising you haven’t built the product your customer actually wants is very expensive! <span class="bigger">Tech problems are cheaper to fix than conceptual problems.</span> </p>
+                        <p>The relative costs of rectifying something gone wrong at each stage</p>
+                        <p>The top row, where a business case gets verified only by the software in the hands of end-users</p>
 
-                        <p><span class="bigger blue">Are we building the right thing?</span><span class="smaller darkgray"> is more important than</span><span class="bigger blue"> Are we building the thing right?</span></p>
 
-                        <p> With this firmly in mind. We see it makes sense to verify as early as it possible to do so. If only there were ways of sense-checking what we intend to do before we do it.. </p>
-                        <p class="bigger">Specification by Example</p>            
-                        <p> <span class="bigger blue">So what is it?</span> It's a communication technique. A natural and elegant process for elaborating software business rules. The biggest benefit of Specification by Example is not testing or automation but improved communication and mutual understanding across your implementation team</p>
+                        <p>Finding problems late is expensive. Realising you haven’t built the product your customer actually wants is very expensive! Tech problems are cheaper to fix than conceptual problems. </p>
 
-                        <p class='green'>We can bridge the communication gap by communicating intent, getting different roles involved in nailing down the requirements and exploiting the relationships between tests, examples and requirements. We can use realistic examples consistently throughout the project to avoid the translation and minimise the effect of the telephone game*, saving information from falling through the communication gaps. In order to ensure that the initial set of examples is good enough for development and testing, programmers and testers have to get involved in defining them. The discussion about these examples builds up a shared understanding of the domain, flushing out small communication problems straight from the start<span class="smaller darkgray">- Gojko Adzic - Bridging the Communication Gap</span></p>
-                        <p><span class="required">*</span><span class="darkgray smaller">often called ‘chinese whispers' in the uk</span></p>
+                        <p>Are we building the right thing? is more important than Are we building the thing right?</p>
+                        <p>Specification by Example</p>            
+
+                        <p class='quote'>We can bridge the communication gap by communicating intent, getting different roles involved in nailing down the requirements and exploiting the relationships between tests, examples and requirements. We can use realistic examples consistently throughout the project to avoid the translation and minimise the effect of the telephone game*, saving information from falling through the communication gaps. In order to ensure that the initial set of examples is good enough for development and testing, programmers and testers have to get involved in defining them. The discussion about these examples builds up a shared understanding of the domain, flushing out small communication problems straight from the start<span>- Gojko Adzic - Bridging the Communication Gap</span></p>
+                        <p><span class="required">*</span>often called ‘chinese whispers' in the uk</p>
                     </div>
                 </div>
                 <div class="row vertical_wrapper">
@@ -79,19 +79,20 @@
                         <img src="imgs/requirementtest.png" />
                     </div>
                     <div class="col-sm-6 vertical_block">                        
-                        <p class="required">Writing requirements and testing are interrelated, much like the <span class="bigger">2 sides of a Mobius strip</span><br/><span class="darkgray smaller"> Robert C Martin - Tests and Requirements, Requirements and tests</span></p>
+                        <p class="quote">Writing requirements and testing are interrelated, much like the 2 sides of a Mobius strip<span> Robert C Martin - Tests and Requirements, Requirements and tests</span></p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <p>Classical project requirements focus on what but not on why. These are called Imperative requirements, and they are effectively a proposed solution to a problem without investigating what the problem actually is. They give a false impression of an exacting specification. <span class="bigger">Lets look at Dan North’ classic example of withdrawing cash from an ATM:</span></p>
-                        <p class="bigger">An imperative requirement might be:</p>
-                        <p class="darkgray">Account holders can withdraw money from the machine and have their account debited appropriately </p>
+                        <p>Classical project requirements focus on what but not on why. These are called Imperative requirements, and they are effectively a proposed solution to a problem without investigating what the problem actually is. They give a false
+                            impression of an exacting specification. Lets look at Dan North’ classic example of withdrawing cash from an ATM:</p>
+                        <p>An imperative requirement might be:</p>
+                        <p>Account holders can withdraw money from the machine and have their account debited appropriately </p>
                         <p>Lets contrast this with specifying examples:</p>
 
-                        <p class="darkgray">Story: Account Holder withdraws cash</p>
+                        <p>Story: Account Holder withdraws cash</p>
 
-                        <span class="darkgray">As an Account Holder
+                        <span>As an Account Holder
 I want to withdraw cash from an ATM
 So that I can get money when the bank is closed
  
@@ -113,12 +114,13 @@ Then the ATM should not dispense any money
  And the ATM should say there are insufficient funds
  And the account balance should be \$20
  And the card should be returned </span>
-                        <p>After reading these can you think of other examples? Of course you can! Reading examples stimulates your brain and thats a natural process. <span class="smaller">What about using different debits and limits? when withdrawal take account over overdraft facilities? What should happen around boundaries?</span><span class="bigger"> Should the machine ever retain the card?</span></p>
+                        <p>After reading these can you think of other examples? Of course you can! Reading examples stimulates your brain and thats a natural process. What about using different debits and limits? when withdrawal take account over overdraft
+                            facilities? What should happen around boundaries? Should the machine ever retain the card? ...</p>
 
                         <p> Realistic examples make us think harder and leave far less chance for misunderstanding. It becomes easier to spot gaps, missed cases and inconsistencies. </p>
 
-                        <p><span class="blue">Seems a bit more work upfront!</span> It is.Its a simple and elegant approach but not always easy</p>
-                        <p><span class="blue">Maybe better to do this at reqs stage rather than unrooting real problems late when they're multiples of the cost to fix though?</span> You’re getting the hang of this..</p>
+                        <p>Seems a bit more work upfront! It is</p>
+                        <p>Maybe better to do this at reqs stage rather than unrooting real problems late when they're multiples of the cost to fix though? You’re getting the hang of this..</p>
 
                         <p>Also, we'll want to automate these examples. For a computer to run them they need to be exact.</p></div></div>
                         <div class="row vertical_wrapper">
