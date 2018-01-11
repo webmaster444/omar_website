@@ -38,44 +38,43 @@
         <div class="content_wrapper">
             <div class="container">
                 <section id="position_section">
-                    <div class="row">
-                        <div class="col-sm-12">
                     <p>The testing world is big. There’s a lot of confusion around <span class="smaller">testing so here’s a</span> <span class="darkgray">(3 minute read)</span> primer. </p>
                     <p>We also want you to know where we sit in the testing world:</p>
-                </div>
-            </div>
-                    <div class="row vertical_wrapper">
-                    <div class="col-sm-8 offset-sm-2">                        
-                        <img class="" src="imgs/position1.png" alt="Position 1" />                        
-                    </div> 
-                    <div class="clearfix"></div>
-                    </div>       
-                    <div class="row">
-                        <div class="col-sm-12">
-                    <p>Its a brake release spring from a bike. Its small but important because it releases the brake when you release the lever (stops the bike stopping!). You could say its a unit because it has no smaller parts. Its not dependent on any other parts and its easily tested in isolation</p>
-                </div></div>
                     <div class="row vertical_wrapper">
                     <div class="col-sm-8 offset-sm-2">
-                        <img src="imgs/position2.png" alt="Position 2" />
-                    </div>
+                        <p class="half_width">Know what this is?</p>
+                        <img class="half_width" src="imgs/position1.jpeg" alt="Position 1" />                        
+                    </div> 
                     <div class="clearfix"></div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                    <p>Unit tests verify individual components of a complex system. A unit can be tested independently of the other parts of that system. These tests are cool because they let us know whether each of the the small parts of a system work in isolation. Unit tests are best written by developers because they are close to the code. The tests can be run quickly and efficiently by computers so its good to have many of them</p>
-</div></div>
+</div>                
+                    <p>Its a brake release spring from a bike. Its small but important because it releases the brake when you release the lever (stops the bike stopping!). You could say its a unit because it has no smaller parts. Its not dependent on any other parts and its easily tested in isolation</p>
                     <div class="row vertical_wrapper">
-                        <div class="offset-sm-2 col-sm-8">
-                            <img src="imgs/position3.png" alt="Position 3" />
+                    <div class="col-sm-6 vertical_block">
+                        <img src="imgs/position2.jpeg" alt="Position 2" />                        
+                    </div> 
+                    <div class="col-sm-6 vertical_block">
+                        <p>Put under specified tension and release</p>
+                    </div>
+                </div>
+                    <p>Unit tests verify individual components of a complex system. A unit can be tested independently of the other parts of that system. These tests are cool because they let us know whether each of the the small parts of a system work in isolation. Unit tests are best written by developers because they are close to the code. The tests can be run quickly and efficiently by computers so its good to have many of them</p>
+
+                    <div class="row vertical_wrapper">
+                        <div class="col-sm-3 vertical_block">
+                            <img src="imgs/unittest.png" alt="Position 2" />
                         </div>
-                        <div class="clearfix"></div>
+                        <div class="col-sm-9 vertical_block">
+                            <p class="success_or_fail">We know the small parts work in isolation </p>                            
+                            <p>We know which small parts have failed. We can fix them and run again.</p>
+                        </div>
                     </div>
 
                     <div class="row vertical_wrapper">
-                        <div class="col-sm-8 offset-sm-2">
-                            <img src="imgs/position4.png" alt="Position 4" />
+                        <div class="col-sm-6 vertical_block">
+                        <p>Here is a brake from that bike.</p>
                         </div>
-                        <div class="clearfix"></div>
+                        <div class="col-sm-4 vertical_block">
+                            <img src="imgs/position3.jpeg" alt="Position 3" />
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
@@ -85,26 +84,37 @@
                         </div>
                     </div>
                     <div class="row vertical_wrapper">
-                        <div class="col-sm-8 offset-sm-2">
-                            <img src="imgs/position5.png" alt="Position 5" />
-                        </div>
+                        <div class="col-sm-6 vertical_block">
+                        <img src="imgs/position4.jpeg" alt="Position 4" />
+                    </div>
+                    <div class="col-sm-6 vertical_block">
+                        <p>Check brake fixed properly to frame</p>
+                        <p>Check brake opens and closes when lever pulled</p>
+                        <p>Check brake-pads contact rim appropriately</p>
+                        <p>Check brake-pads release appropriately</p>
+                    </div>
                 </div>
                 <div class='row'>
-                    <div class="col-sm-12">
                         <p>Component tests are unsatisfactory in isolation because they neither tell you the whole system works or where exactly something one wrong. Unit and component tests come from the <span class="orange">inside-out:</span> driven by knowledge of how the system
                             is built.</p>
-                        </div>
                     </div>
 
                     <div class="row vertical_wrapper">
-                        <div class="col-sm-8 offset-sm-2 ">
-                            <img src="imgs/position6.png" alt="Position 6" />
+                        <div class="col-sm-3 vertical_block">
+                            <img src="imgs/componenttest.png" alt="Component Test" />
+                        </div>
+                        <div class="col-sm-9 vertical_block">
+                            <p class="success_or_fail">This component works, but what about its interfaces between components?</p>
+                            <p>Which part of component failed? Lets go back and check the unit tests</p>
                         </div>
                     </div>
                     <div class="row vertical_wrapper">
-                        <div class="col-sm-8 offset-sm-2">
-                            <img src="imgs/position7.png" alt="Position 7" />
-</div>
+                        <div class="col-sm-6 vertical_block">
+                        <p>Here is a system. In our case its a bike.</p>
+                    </div>
+                    <div class="col-sm-4 vertical_block">
+                        <img src="imgs/position5.jpeg" alt="Position 5" />
+                    </div>
                 </div>
                     <div class="row">
                         <div class="col-sm-12">
@@ -113,8 +123,11 @@
                     </div>
                     </div>
                     <div class="row vertical_wrapper">
-                        <div class="col-sm-8 offset-sm-2">
-                            <img src="imgs/position8.png" alt="Position 8" />
+                        <div class="col-sm-6 vertical_block">
+                            <img src="imgs/position6.jpeg" alt="Position 6" />
+                        </div>
+                        <div class="col-sm-6 vertical_block">
+                            <p>No need to outline the ways you’d test a bike. You’ve known them since you were 4</p>
                         </div>                        
                         
                         <p>Behavioural (aka black-box) tests are <span class="orange">outside-in:</span> don’t need (or want) knowledge of how the system is built</p>
@@ -123,8 +136,11 @@
                         <p>..like getting in a car and verifying that it drives forward, without concern for whats under the bonnet</p>
                     </div>
                     <div class="row">
-                        <div class="col-sm-8 offset-sm-2">
-                            <img src="imgs/position9.png" alt="Position 9">                        
+                        <div class="col-sm-6">
+                            <img src="imgs/car.png" class="pull-right">
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="imgs/mouse.png">
                         </div>
                     </div>
                     <div class="row">
@@ -135,26 +151,33 @@
                         </div>
                     </div>
                     <div class="row vertical_wrapper">
-                        <div class="col-sm-8 offset-sm-2">
-                            <img src="imgs/position10.png" alt="Position 10" />
+                        <div class="col-sm-3 vertical_block">
+                            <img src="imgs/behaviourtest.png">
+                        </div>
+                        <div class="col-sm-9 vertical_block">
+                            <p class="success_or_fail">Behaviour is as we specified</p>
+                            <p>Behaviour is not as we specified. Check component tests</p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-sm-12">
                         <p><span class="smaller">Some may discuss whether to have unit and component tests OR behavioural tests [TDD vs BDD]. This is a misguided notion and in 2018</span><span class="bigger"> you need both. They cover completely different aspects and complement each other beautifully! </span></p>
+
+
+                        <p>Relative # of tests heuristic -></p>
+                    </div></div>
+                                            <div class="col-sm-3 vertical_block">
+                            <img src="imgs/position7.jpeg">
                         </div>
-                    </div>
+                        <div class="col-sm-9 vertical_block">
+                            <p>Outside In.    &nbsp; &nbsp;&nbsp; &nbsp;Less tests.   &nbsp; &nbsp;&nbsp; &nbsp; Slower to run</p>
+                            <p>Inside out.    &nbsp; &nbsp;&nbsp; &nbsp;More tests.   &nbsp; &nbsp;&nbsp; &nbsp; Faster to run</p>
+                            <p>Inside out.    &nbsp; &nbsp;&nbsp; &nbsp;Most tests.   &nbsp; &nbsp;&nbsp; &nbsp;  Fast to run</p>
+                        </div>
                     <div class="row">
-                        <div class="col-sm-8 offset-sm-2">
-                            <img src="imgs/position11.png">
-                        </div>                        
-                    </div>
-                    <br/>
-                    <div class="row">
-                        <div class="col-sm-12">
+                                                
                         <p>After all this talk of testing. Please check the SPEC page to see what we think <span class="bigger orange">is more important than testing</span></p>
-                    </div>
                     </div>
                     </div>
                 </section>

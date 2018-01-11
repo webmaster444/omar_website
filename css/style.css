@@ -188,6 +188,7 @@ a:hover{
 }
 .half_width{
     width: 50%;    
+    display: inline-block;
 }
 .peace_img_wrapper{
     text-align: center;        
@@ -317,11 +318,13 @@ span.bigger{
 span.smaller{
     font-size: 16px;
 }
-
-@media (max-width: 767px) {
-    p.half_width:first-child{
-    font-size: 12px;
+img.half_width{
+    max-width: 200px;
 }
+@media (max-width: 767px) {
+    p.half_width{
+        font-size: 12px;
+    }
     .desktop_only{
         display: none;
     }
