@@ -40,6 +40,7 @@
                <p>We specify examples and automate the specification as <span class="green">business-facing tests</span>. Lets step through an example to illustrate:</p>
                <p>Lets say we want to build a feature. A basic picture which I can alter on screen via a set of controls. 
 Lets go ahead and specify behaviours we want to see. As examples:</p>
+<br/>
 <div class="scenario_wrapper">
                <p>Scenario: Show picture<br/>
                   Given i am on the Testclub website<br/>
@@ -73,9 +74,9 @@ Lets go ahead and specify behaviours we want to see. As examples:</p>
                <p>Examples:<br/>
                   | link_colour | rect_colour |<br/>
                   | black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| black &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br/>
-                  | red   &nbsp;&nbsp;| red &nbsp;&nbsp;|<br/>
-                  | blue &nbsp;&nbsp;| blue &nbsp;&nbsp;|<br/>
-                  | yellow &nbsp;&nbsp;| yellow &nbsp;&nbsp;|<br/>
+                  | red   &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;| red &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;|<br/>
+                  | blue &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; | blue &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; |<br/>
+                  | yellow &nbsp;&nbsp; &nbsp;&nbsp; | yellow &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;|<br/>
                </p><br/>
                <p>
                   Scenario outline: Rotate picture<br/>
@@ -86,11 +87,11 @@ Lets go ahead and specify behaviours we want to see. As examples:</p>
                   Then the picture rotates 90 degrees to the <rotation_direction><br/>
                </p>
                <p>| rotation_direction |<br/>
-                  | left                        |<br/>
-                  | left                        |<br/>
-                  | right                      |<br/>
-                  | right                      |<br/>
-                  | right                      |<br/>
+                  | left &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;|<br/>
+                  | left &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;|<br/>
+                  | right &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br/>
+                  | right &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br/>
+                  | right &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br/>
                </p>
                </div>
                <p>You don’t need to be technical to read what these tests do. Anybody interested in how the software can contribute.</p>
