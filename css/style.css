@@ -183,7 +183,7 @@ a:hover{
         font-size: 18px;
     }
     .peace_img_wrapper img{
-        margin-top: -80px;
+        margin-top: -15px;
     }
     .half{
       width: 50%;
@@ -210,7 +210,7 @@ a:hover{
         padding: 1.5em .5em 1.5em .5em;
         margin: 0;
         border: none;        
-        font-size:15px;
+        font-size:13px;
     }
     nav a:hover,
     nav a:focus {
@@ -289,6 +289,11 @@ h3.widget_title{
 span.bigger{
     font-size: 22px;
 }
+
+span.smaller{
+    font-size: 16px;
+}
+
 @media (max-width: 767px) {
     .desktop_only{
         display: none;
