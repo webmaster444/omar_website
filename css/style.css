@@ -186,7 +186,17 @@ a:hover{
 .peace_img_wrapper{
     text-align: center;        
 }
+.imgs_wrapper{
+    margin-left: 0;
+    margin-right: 0;
+}
+.imgs_wrapper img{
+    margin: 0 auto;
+}
 @media (min-width: 780px) {            
+    .vertical_block:first-child{
+        text-align: right;
+    }
     .contact_li a img{
         width: 30px;
     }
