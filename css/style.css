@@ -286,6 +286,9 @@ h3.widget_title{
     display: inline-block;
 }
 
+span.bigger{
+    font-size: 22px;
+}
 @media (max-width: 767px) {
     .desktop_only{
         display: none;
