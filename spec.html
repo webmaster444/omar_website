@@ -80,7 +80,7 @@
                         <p> With this firmly in mind. We see it makes sense to verify as early as it possible to do so. If only there were ways of sense-checking what we intend to do before we do it.. </p><br/>
                         <p class="bigger">Specification by Example</p>            
                         <p> <span class="bigger blue">So what is it?</span> It's a communication technique. A natural and elegant process for elaborating software business rules. The biggest benefit of Specification by Example is not testing or automation but improved communication and mutual understanding across your implementation team</p>
-
+<br/>
                         <p class='green' style="font-size:16px;">We can bridge the communication gap by communicating intent, getting different roles involved in nailing down the requirements and exploiting the relationships between tests, examples and requirements. We can use realistic examples consistently throughout the project to avoid the translation and minimise the effect of the telephone game<span class="required">*</span>, saving information from falling through the communication gaps. In order to ensure that the initial set of examples is good enough for development and testing, programmers and testers have to get involved in defining them. The discussion about these examples builds up a shared understanding of the domain, flushing out small communication problems straight from the start<br/><span class="smaller darkgray">Gojko Adzic - Bridging the Communication Gap</span></p>
                         <p><span class="required">*</span><span class="darkgray tiny">often called ‘chinese whispers' in the uk</span></p>
                     </div>
@@ -94,7 +94,8 @@
                 <br/>
                 <div class="row">
                     <div class="col-sm-12">
-                        <p>Classical project requirements focus on what but not on why. These are called Imperative requirements, and they are effectively a proposed solution to a problem without investigating what the problem actually is. They give a false impression of an exacting specification.Lets look at Dan North’ classic example of withdrawing cash from an ATM:</p>
+                        <p>Classical project requirements focus on what but not on why. These are called Imperative requirements, and they are effectively a proposed solution to a problem without investigating what the problem actually is. They give a false impression of an exacting specification.<span style="margin-left:20px;">Lets look at Dan North’ classic example of withdrawing cash from an ATM:</span></p>
+                        <br/>
                         <p class="bigger">An imperative requirement might be:</p>
                         <p class="darkgray">Account holders can withdraw money from the machine and have their account debited appropriately </p>
                         <p>Lets contrast this with specifying examples:</p>
@@ -123,11 +124,11 @@ Then the ATM should not dispense any money<br/>
  And the ATM should say there are insufficient funds<br/>
  And the account balance should be \$20<br/>
  And the card should be returned. </span><br/><br/>
-                        <p>After reading these can you think of other examples? Of course you can! Reading examples stimulates your brain and thats a natural process. <span class="smaller">What about using different debits and limits? when withdrawal take account over overdraft facilities? What should happen around boundaries?</span><span class="bigger"> Should the machine ever retain the card?</span></p>
-
+                        <p>After reading these can you think of other examples? Of course you can! Reading examples stimulates your brain and thats a natural process. What about using different debits and limits? when withdrawal take account over overdraft facilities? What should happen around boundaries? Should the machine ever retain the card?</p>
+<br/>
                         <p> Realistic examples make us think harder and leave far less chance for misunderstanding. It becomes easier to spot gaps, missed cases and inconsistencies. </p>
 <br/>
-                        <p><span class="blue">Seems a bit more work upfront!</span> It is.Its a simple and elegant approach but not always easy</p>
+                        <p><span class="blue">Seems a bit more work upfront!</span> It is. Its a simple and elegant approach but not always easy</p>
                         <p><span class="blue">Maybe better to do this at reqs stage rather than unrooting real problems late when they're multiples of the cost to fix though?</span> You’re getting the hang of this!</p>
 <br/>
                         <p>Also, we'll want to automate these examples. For a computer to run them they need to be exact.</p></div></div>
@@ -145,6 +146,7 @@ Then the ATM should not dispense any money<br/>
                         <img src="imgs/spec4.png" />
                     </div>
                 </div>
+                <br/><br/>
                 <div class='row'>
                     <div class='col-sm-12'>
                         <p>Putting effort into creating an agile specification process promotes success on many levels </p>
