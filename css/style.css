@@ -327,6 +327,9 @@ span.bigger{
 span.smaller{
     font-size: 15px;
 }
+.tiny{
+    font-size:12px;
+}
 img.half_width{
     max-width: 200px;
 }
