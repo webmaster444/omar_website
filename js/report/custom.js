@@ -1,6 +1,6 @@
 $(function() {        
     var donutData,donutData1;
-    d3.json('data/tests2.json',function(data){     
+    d3.json('data/work.json',function(data){     
         let _data = data;                               
         var donutData = parseData(data, 'Status');        
         donutChart('#flow_execution_chart', donutData,_data,'Status');
