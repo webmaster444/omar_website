@@ -1,5 +1,5 @@
 $(function(){
-    // $('#imgs_wrapper').css('height',$('#button_wrapper').css('height'));
+    $('#imgs_wrapper').css('height',$('#imgs_wrapper').css('width'));
     $('#imgs_wrapper').css('opacity',0);
     var angle = 0;
     $('#picBtn').change(function() {
