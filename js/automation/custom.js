@@ -1,5 +1,5 @@
 $(function(){
-    $('#imgs_wrapper').css('height',$('#imgs_wrapper img:first').css('height'));
+    $('#imgs_wrapper').css('height',$('#button_wrapper').css('height'));
     $('#imgs_wrapper').css('opacity',0);
     var angle = 0;
     $('#picBtn').change(function() {
@@ -57,12 +57,41 @@ $(function(){
 
     $('#rotateLeft').click(function(){
         angle +=90;
-        $("#imgs_wrapper").rotate(angle);
+        // $("#imgs_wrapper").rotate({animateTo:angle});
+        $("#line_img").rotate({animateTo:angle});
+        $("#blue_img").rotate({animateTo:angle});
+        $("#black_img").rotate({animateTo:angle});
+        $("#red_img").rotate({animateTo:angle});
+        $("#yellow_img").rotate({animateTo:angle});
+        // $("#imgs_wrapper").rotate({ 
+        //    bind: 
+        //      { 
+        //         click: function(){                    
+        //             $(this).rotate({ animateTo:angle})
+        //         }
+        //      } 
+           
+        // });
     });
 
     $('#rotateRight').click(function(){
         angle -=90;
-        $("#imgs_wrapper").rotate(angle);
+        // $("#imgs_wrapper").rotate({animateTo:angle});
+        // $("#line_img").rotate({animateTo:angle});
+        $("#line_img").rotate({animateTo:angle});
+        $("#blue_img").rotate({animateTo:angle});
+        $("#black_img").rotate({animateTo:angle});
+        $("#red_img").rotate({animateTo:angle});
+        $("#yellow_img").rotate({animateTo:angle});
+        // $("#imgs_wrapper").rotate({ 
+        //    bind: 
+        //      { 
+        //         click: function(){                    
+        //             $(this).rotate({ animateTo:angle})
+        //         }
+        //      } 
+           
+        // });
     });
 
 
