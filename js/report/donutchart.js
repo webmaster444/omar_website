@@ -47,7 +47,7 @@ function donutChart(chartWrapper, dataset,oData,selectedKey) {
     var g = svg.selectAll(".arc")
         .data(pie(dataset))
         .enter().append("g")
-        .attr("class", "arc");
+        .attr("class", "arc");    
 
     var arc_path = g.append("path")
         .attr('class', 'arc_path')

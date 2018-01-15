@@ -1,7 +1,7 @@
 function drawHeatmap(chartWrapper, dataset,oData,selectedKey){
-var margin = {top:50, right:0, bottom:100, left:30},
-		width=960-margin.left-margin.right,
-		height=480-margin.top-margin.bottom,
+var margin = {top:80, right:0, bottom:100, left:30},
+		width=990-margin.left-margin.right,
+		height=550-margin.top-margin.bottom,
 		gridSize=Math.floor(width/24),
 		legendElementWidth=gridSize*2.665,
 		buckets = 10,
