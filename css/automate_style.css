@@ -33,7 +33,7 @@ text{
 	padding:10px;
 	box-sizing: border-box;
 	position: relative;	
-	min-height: 200px;
+	min-height: 300px;
 }
 #button_wrapper label.btn.checked{
 	border:2px solid #51b1e3;
