@@ -188,4 +188,16 @@ border: 2px solid #51b1e3;
 #imgs_wrapper{	
 	width: 100%;
 }
+#button_wrapper{
+	width: 100%;
+}
+}
+
+@media (max-width:400px){
+	#button_wrapper label.btn{
+		width: auto;
+	}
+	#rotateLeft, #rotateRight{
+		margin: 0;
+	}
 }
