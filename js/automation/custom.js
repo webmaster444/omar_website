@@ -56,7 +56,7 @@ $(function(){
     }); 
 
     $('#rotateLeft').click(function(){
-        angle +=90;
+        angle -=90;
         // $("#imgs_wrapper").rotate({animateTo:angle});
         $("#line_img").rotate({animateTo:angle});
         $("#blue_img").rotate({animateTo:angle});
@@ -75,7 +75,7 @@ $(function(){
     });
 
     $('#rotateRight').click(function(){
-        angle -=90;
+        angle +=90;
         // $("#imgs_wrapper").rotate({animateTo:angle});
         // $("#line_img").rotate({animateTo:angle});
         $("#line_img").rotate({animateTo:angle});
