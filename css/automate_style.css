@@ -191,6 +191,16 @@ border: 2px solid #51b1e3;
 #button_wrapper{
 	width: 100%;
 }
+#button_wrapper label.btn{	
+	padding: 0 10px;
+	font-size: 12px;
+	margin: 0px;
+	font-weight: 300;
+}
+#rotateLeft, #rotateRight{
+	font-size: 15px;
+	padding: 3px 8px;
+}
 }
 
 @media (max-width:400px){
