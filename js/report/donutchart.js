@@ -31,18 +31,18 @@ function donutChart(chartWrapper, dataset,oData,selectedKey) {
     
     var formatPercent = d3.format(",.2%");
 
-    var tip = d3.tip()
-        .attr('class', 'd3-tip')
-        .offset([-10, 0])
-        .html(function(d) {
-            return "<strong>" + d.data.name + ": " + "</strong> <span style='color:red'>" + d.data.total + " / </span>" +""+" <span style='color:red'>" + formatPercent(d.data.total / sum) +"</span>";
-        })
+    // var tip = d3.tip()
+    //     .attr('class', 'd3-tip')
+    //     .offset([-10, 0])
+    //     .html(function(d) {
+    //         return "<strong>" + d.data.name + ": " + "</strong> <span style='color:red'>" + d.data.total + " / </span>" +""+" <span style='color:red'>" + formatPercent(d.data.total / sum) +"</span>";
+    //     })
     
     dataset.forEach(function(d){
       type(d);
     });
     
-    svg.call(tip);
+    // svg.call(tip);
 
     var g = svg.selectAll(".arc")
         .data(pie(dataset))
@@ -66,16 +66,44 @@ function donutChart(chartWrapper, dataset,oData,selectedKey) {
             }
         })
 
+    // d3.select(chartWrapper).append('div').attr('id','tooltip').classed('hidden',true);
+    var div = d3.select(chartWrapper).append("div")   
+    .attr("class", "tooltip")               
+    .style("opacity", 0);
+
+
     svg.selectAll('.arc_path').on('mouseover', function(d, i, j) {
             pathAnim(d3.select(this), 1);
-            tip.show(d);
+            // tip.show(d);
+            div.transition()        
+                .duration(200)      
+                .style("opacity", .9);      
+            div .html("<strong>" + d.data.name + ": " + "</strong> <span style='color:red'>" + d.data.total + " / </span>" +""+" <span style='color:red'>" + formatPercent(d.data.total / sum) +"</span>")  
+                .style("left", (d3.event.pageX) + "px")     
+                .style("top", (d3.event.pageY - 28) + "px");                
+            // var xPosition = parseFloat(d3.select(this).attr("x")) + radius/2;
+            // var yPosition = parseFloat(d3.select(this).attr("y")) / 2 + height / 2;
+            // // parseFloat means that even if result is a string, interpret as a float
+            // console.log(x+':'+y);
+            // var strValue = d.data.name + ':' + d.data.total + formatPercent(d.data.total / sum);
+            // // Update the tooltip position and value
+            // d3.select("#tooltip")
+            //     .style("left", x + "px")
+            //     .style("top", y + "px")                
+            //     .text(strValue);
+
+            // d3.select("#tooltip").classed("hidden", false);  // Show the tooltip
         })
         .on('mouseout', function(d, i, j) {
             var thisPath = d3.select(this);
             // if (!thisPath.classed('clicked')) {
                 pathAnim(thisPath, 0);
             // }
-            tip.hide(d);
+            // tip.hide(d);
+            // d3.select("#tooltip").classed("hidden", true);  // Hide the tooltip
+            div.transition()        
+                .duration(500)      
+                .style("opacity", 0);   
         }).on('click', function(d, i, j) {
             // var thisPath = d3.select(this);
             // var clicked = thisPath.classed('clicked');
