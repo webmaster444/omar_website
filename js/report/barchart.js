@@ -27,14 +27,17 @@ var svg = d3.select(wrapper).append("svg")
     .attr("transform", 
           "translate(" + margin.left + "," + margin.top + ")");
 
-var tip = d3.tip()
-  .attr('class', 'd3-tip')
-  .offset([-10, 0])
-  .html(function(d) {
-    return "<strong>"+d.key+": "+"</strong> <span style='color:red'>" + d.value + "</span>";
-  })
+// var tip = d3.tip()
+//   .attr('class', 'd3-tip')
+//   .offset([-10, 0])
+//   .html(function(d) {
+//     return "<strong>"+d.key+": "+"</strong> <span style='color:red'>" + d.value + "</span>";
+//   })
 
-svg.call(tip);
+// svg.call(tip);
+    var div = d3.select(wrapper).append("div")   
+    .attr("class", "tooltip")               
+    .style("opacity", 0);
 
 data.forEach(function(d) {
   d.date = d.key;
@@ -80,8 +83,19 @@ data.forEach(function(d) {
       .attr("y", function(d) {return y(d.value); });
 
     svg.selectAll(".bar")
-      .on('mouseover', tip.show)
-      .on('mouseout', tip.hide)
+      .on('mouseover', function(d){
+        div.transition()        
+            .duration(200)      
+            .style("opacity", .9);      
+        div .html("<strong>"+d.key+": "+"</strong> <span style='color:red'>" + d.value + "</span>")  
+            .style("left", (d3.event.pageX) + "px")     
+            .style("top", (d3.event.pageY - 28) + "px");  
+      })
+      .on('mouseout', function(d){
+        div.transition()        
+          .duration(500)      
+          .style("opacity", 0);   
+      })
       .on('click', function(d){        
         tabulate(oData,['Id','Flow','Status'], selectedKey, d.key, svg); 
       })
