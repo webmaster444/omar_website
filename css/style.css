@@ -340,6 +340,10 @@ img.half_width{
     color: #666;
 }
 @media (max-width: 767px) {
+    .mobile_full_width{
+        display: block;
+        text-align: center;
+    }
     p.half_width{
         font-size: 12px;
     }
