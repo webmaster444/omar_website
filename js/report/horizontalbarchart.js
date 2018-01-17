@@ -4,8 +4,8 @@
             valueMargin = 4,
             width = parseInt(d3.select(chartWrapper).style('width'), 10),
             height = parseInt(d3.select(chartWrapper).style('height'), 10),
-            barHeight = (height-axisMargin-margin*2)* 0.4/dataset.length,
-            barPadding = (height-axisMargin-margin*2)*0.6/dataset.length,
+            barHeight = (height-axisMargin-margin*2)* 0.5/dataset.length,
+            barPadding = (height-axisMargin-margin*2)*0.5/dataset.length,
             bar, svg, scale, xAxis, labelWidth = 0;
 
     var color = ['green','red'];
@@ -15,7 +15,8 @@
             .append("svg")            
             .attr("width", '100%')
             .attr("height", '100%')
-            .attr("viewBox",'0 0 '+ width + ' ' + height);
+            // .attr("viewBox",'0 0 '+ width + ' ' + height);
+            .attr("viewBox",'0 0 '+ width + ' ' + 260);
 
 
     bar = svg.selectAll("g")
@@ -43,9 +44,11 @@
             .domain([0, max])
             .range([0, width - margin*2 - labelWidth]);
 
+            console.log(-height+2*margin+axisMargin);
+
     xAxis = d3.svg.axis()
             .scale(scale)
-            .tickSize(-height + 2*margin + axisMargin)
+            .tickSize(-height + 2*margin + 2*axisMargin)            
             .orient("bottom");
 
     bar.append("rect")
@@ -79,7 +82,7 @@
 
     svg.insert("g",":first-child")
             .attr("class", "axisHorizontal")
-            .attr("transform", "translate(" + (margin + labelWidth) + ","+ (height - axisMargin - margin)+")")
+            .attr("transform", "translate(" + (margin + labelWidth) + ","+ (height - axisMargin - margin - axisMargin)+")")
             .call(xAxis);
 
 function tabulate(data, columns, selectedKey, selectedValue,context) {   
