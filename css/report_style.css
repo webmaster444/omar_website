@@ -75,6 +75,7 @@ h3{
 }
 #table_data{
   width: 100%;  
+  clear: both;
 }
 
 #horizontal_bar_chart{
