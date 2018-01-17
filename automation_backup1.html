@@ -54,42 +54,44 @@ Lets go ahead and specify behaviours we want to see. As examples:</p>
                   When i toggle lines off<br/>
                   Then i dont see any lines<br/>
                </p>
+               <p>Scenario: Toggle lines on<br/>
+                  Given i am on the automation page<br/>
+                  And i can see the picture<br/>
+                  And lines are off<br/>
+                  When i toggle lines on<br/>
+                  Then i see the lines<br/>
+               </p>
                <p>
                   Scenario outline: Toggle rectangles<br/>
                   Given i am on the Testclub website<br/>
-                  And i am on the Automation page<br/>
-                  And i opt to see the picture<br/>
-                  And i toggle the <color> rectangles on
+                  And i am on the automation page<br/>
+                  And i see the picture<br/>
+                  And i put the <link_colour> on<br/>
                   And i see the <rect_colour> rectangles<br/>
-                  When i toggle the <colour> rectangles off<br/>
+                  When i put the <link colour>link off<br/>
                   Then i dont see the <rect_colour> rectangles<br/>
                </p>
                <p>Examples:<br/>
-                  | colour | rect_colour |<br/>
-                  | black&nbsp;&nbsp;| black &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br/>
-                  | red   &nbsp;&nbsp;&nbsp; | red &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;|<br/>
-                  | blue &nbsp;&nbsp; | blue &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; |<br/>
-                  | yellow | yellow &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;|<br/>
+                  | link_colour | rect_colour |<br/>
+                  | black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| black &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br/>
+                  | red   &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;| red &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;|<br/>
+                  | blue &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; | blue &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; |<br/>
+                  | yellow &nbsp;&nbsp; &nbsp;&nbsp; | yellow &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;|<br/>
                </p><br/>
                <p>
-                  Scenario: Rotate left with lines off<br/>
+                  Scenario outline: Rotate picture<br/>
                   Given i am on the Testclub website<br/>
-                  And i am on the Automation page<br/>
-                  And i opt to see the picture<br/>
-                  And i turn off the lines<br/>
-                  When i click the rotate left button <br/>
-                  Then the picture rotates 90 degrees to the left<br/>
+                  And i am on the automation page<br/>
+                  And i see the picture<br/>
+                  When i click the <rotation_direction> link<br/>
+                  Then the picture rotates 90 degrees to the <rotation_direction><br/>
                </p>
-               <p>
-                  Scenario: Indirect nav and rotate right<br/>
-                  Given i am on the Testclub Position page<br/>
-                  And i navigate to the Spec page<br/>
-                  And i see the VModel diagram<br/>
-                  And i navigate to the Automation page<br/>
-                  And i opt to see the picture<br/>
-                  And i toggle blue and yellow rectangles off<br/>
-                  When i click the rotate right button<br/>
-                  Then the picture roates 90 degress to the right<br/>
+               <p>| rotation_direction |<br/>
+                  | left &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;|<br/>
+                  | left &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;|<br/>
+                  | right &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br/>
+                  | right &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br/>
+                  | right &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br/>
                </p>
                </div>
                <p>You don’t need to be technical to read what these tests do. Anybody interested in how the software can contribute.</p>
